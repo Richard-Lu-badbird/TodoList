@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import {Button} from "@/components/ui/button"
 interface AddTodoProps {
     addTodo: (text: string) => void
 }
@@ -21,7 +21,7 @@ function AddTodo({ addTodo }: AddTodoProps) {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button>新建事项</button>
+      <Button>新建事项</Button>
     </form>
   )
 }
