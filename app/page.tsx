@@ -2,9 +2,11 @@
 import AddTodo from "@/components/AddTodo";
 import TodoFilter from "@/components/TodoFilter";
 import TodoList from "@/components/TodoList";
+import {Card} from "@/components/ui/card"
 import { Todo } from "@/types";
 import Image from "next/image";
 import { useState } from "react";
+
 
 export default function Home() {
 
@@ -42,12 +44,15 @@ export default function Home() {
         return todos
     }
   }
+
   return (
-    <div>
-      <h1>TodoList</h1>
-      <AddTodo addTodo={addTodo}></AddTodo>
-      <TodoList todos={getFilteredTodos()} deleteTodo={deleteTodo} toggleTodo={toggleTodo} ></TodoList>
-      <TodoFilter setFilter={setFilter}></TodoFilter>
+    <div className="min-h-screen flex items-center justify-center p-6 bg-gray-50">
+      <Card className="w-full max-w-2xl p-6 space-y-4 rounded-xl shadow-lg bg-white">
+        <h1 className="text-center text-2xl font-semibold">TodoList</h1>
+        <AddTodo addTodo={addTodo}></AddTodo>
+        <TodoList todos={getFilteredTodos()} deleteTodo={deleteTodo} toggleTodo={toggleTodo} ></TodoList>
+        <TodoFilter setFilter={setFilter}></TodoFilter>
+      </Card>
     </div>
   );
 }

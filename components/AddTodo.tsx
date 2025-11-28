@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {Button} from "@/components/ui/button"
+import {Input} from "@/components/ui/input"
 interface AddTodoProps {
     addTodo: (text: string) => void
 }
@@ -16,7 +17,7 @@ function AddTodo({ addTodo }: AddTodoProps) {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      <Input
         type="text"
         value={text}
         onChange={(e) => setText(e.target.value)}
