@@ -16,8 +16,10 @@ function AddTodo({ addTodo }: AddTodoProps) {
     setText('')
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="flex gap-2">
       <Input
+        className="flex-1"
+        placeholder="添加新的待办事项……"
         type="text"
         value={text}
         onChange={(e) => setText(e.target.value)}

@@ -47,8 +47,33 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-6 bg-gray-50">
-      <Card className="w-full max-w-2xl p-6 space-y-4 rounded-xl shadow-lg bg-white">
-        <h1 className="text-center text-2xl font-semibold">TodoList</h1>
+      <Card className="w-full max-w-4xl p-6 space-y-4 rounded-xl shadow-lg bg-white">
+        {/* <div className="flex justify-between item-center">
+          <div className="flex-1 text-center ">
+            <h1 className="textt-2xl font-semibold">TodoList</h1>
+          </div>
+          <h2 className="text-sm text-muted-foreground whitespace-nowrap">
+            Made by Richard
+          </h2>
+        </div> */}
+        <div className="relative flex items-center" >
+          <h1 className="absolute inset-x-0 text-center text-2xl font-semibold">
+            TodoList
+
+          </h1>
+          <div className=" flex ml-auto whitespace-nowrap items-center">
+            <h2 className="text-sm text-muted-foreground whitespace-nowrap inline">
+              Made by @Richard
+            </h2>
+            <Image
+              src="/richardLOGO.JPG"
+              alt="Auther Logo"
+              width={20}
+              height={20}
+              className="ml-2"
+            />
+            </div>
+        </div>
         <AddTodo addTodo={addTodo}></AddTodo>
         <TodoList todos={getFilteredTodos()} deleteTodo={deleteTodo} toggleTodo={toggleTodo} ></TodoList>
         <TodoFilter setFilter={setFilter}></TodoFilter>
