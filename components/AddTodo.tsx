@@ -24,7 +24,8 @@ function AddTodo({ addTodo }: AddTodoProps) {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <Button>新建事项</Button>
+      <Button
+      className="transition-all hover:scale-105 active:scale-95 duration-200">新建事项</Button>
     </form>
   )
 }

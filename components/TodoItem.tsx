@@ -5,7 +5,7 @@ function TodoItem({todo, toggleTodo, deleteTodo}:any) {
       <div className="flex items-center gap-3 flex-1">
         <button 
           onClick={() => toggleTodo(todo.id)}
-          className={`flex-shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200 
+          className={`shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200 
             ${todo.completed ? 'bg-primary border-primary text-white' : 'border-border hover:border-primary focus:ring-1 focus:ring-primary focus:ring-offset-1'}`}
           aria-label={todo.completed ? "标记为未完成" : "标记为已完成"}
         >

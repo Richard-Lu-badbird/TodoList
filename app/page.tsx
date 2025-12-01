@@ -3,7 +3,7 @@ import AddTodo from "@/components/AddTodo";
 import TodoFilter from "@/components/TodoFilter";
 import TodoList from "@/components/TodoList";
 import {Card} from "@/components/ui/card"
-import { Todo } from "@/types";
+import { Todo, Filter } from "@/types";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -11,7 +11,7 @@ import { useState } from "react";
 export default function Home() {
 
   const [todos, setTodos] = useState<Todo[]>([])
-  const [filter, setFilter] = useState('all')
+  const [filter, setFilter] = useState<Filter>('all')
   const addTodo = (text: string) => {
     const newTodo = {
       id: Date.now(),
@@ -45,6 +45,14 @@ export default function Home() {
     }
   }
 
+  const completedCount = todos.filter(todo => todo.completed).length
+  const activeCount = todos.length - completedCount
+  const counts = {
+    all: todos.length,
+    active: activeCount,
+    completed: completedCount
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center p-6 bg-gray-50">
       <Card className="w-full max-w-4xl p-6 space-y-4 rounded-xl shadow-lg bg-white">
@@ -76,7 +84,7 @@ export default function Home() {
         </div>
         <AddTodo addTodo={addTodo}></AddTodo>
         <TodoList todos={getFilteredTodos()} deleteTodo={deleteTodo} toggleTodo={toggleTodo} ></TodoList>
-        <TodoFilter setFilter={setFilter}></TodoFilter>
+        <TodoFilter counts={counts} filter={filter} setFilter={setFilter}></TodoFilter>
       </Card>
     </div>
   );

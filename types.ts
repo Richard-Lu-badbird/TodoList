@@ -3,3 +3,7 @@ export interface Todo {
     text: string;
     completed: boolean;
 }
+
+
+//别名
+export type Filter = 'all' | 'active' | 'completed';
