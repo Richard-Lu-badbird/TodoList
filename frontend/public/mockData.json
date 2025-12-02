@@ -17,7 +17,7 @@
     {
         "id": 4,
         "text": "示例待办 4",
-        "completed": false
+        "completed": true
     },
     {
         "id": 5,
@@ -27,6 +27,11 @@
     {
         "id": 6,
         "text": "33333",
+        "completed": false
+    },
+    {
+        "id": 7,
+        "text": "2222",
         "completed": false
     }
 ]
