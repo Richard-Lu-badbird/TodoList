@@ -1,96 +1,190 @@
-[00:00:00.709] Server  LOG      ✓ Ready in 545ms
-[00:00:07.471] Browser LOG     测试
-[00:00:07.770] Browser LOG     测试
-[00:00:07.939] Browser LOG     测试
-[00:00:08.124] Browser LOG     测试
-[00:00:08.490] Browser LOG     测试
-[00:00:08.657] Browser LOG     测试
-[00:00:08.823] Browser LOG     测试
-[00:00:08.971] Browser LOG     测试
-[00:00:09.136] Browser LOG     测试
-[00:00:09.306] Browser LOG     测试
-[00:00:09.458] Browser LOG     测试
-[00:00:09.648] Browser LOG     测试
-[00:00:10.137] Browser LOG     测试
-[00:00:10.322] Browser LOG     测试
-[00:00:10.607] Browser LOG     测试
-[00:00:10.905] Browser LOG     测试
-[00:00:11.089] Browser LOG     测试
-[00:00:11.258] Browser LOG     测试
-[00:00:11.490] Browser LOG     测试
-[00:02:39.417] Server  LOG      ✓ Compiled in 26ms
-[00:02:45.918] Server  LOG      ✓ Compiled in 89ms
-[00:02:48.543] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
-[00:02:48.543] Browser ERROR   Failed to fetch RSC payload for http://localhost:3000/. Falling back to browser navigation. {}
-[00:02:48.549] Server  ERROR   Error: aborted
-[00:02:51.044] Browser LOG     测试
-[00:02:51.970] Browser LOG     测试
-[00:02:52.224] Browser LOG     测试
-[00:02:56.728] Browser LOG     测试
-[00:02:57.073] Browser LOG     测试
-[00:02:57.508] Browser LOG     测试
-[00:02:57.639] Browser LOG     测试
-[00:02:57.789] Browser LOG     测试
-[00:02:57.956] Browser LOG     测试
-[00:02:58.105] Browser LOG     测试
-[00:02:58.254] Browser LOG     测试
-[00:02:58.536] Browser LOG     测试
-[00:02:58.722] Browser LOG     测试
-[00:03:00.821] Browser LOG     测试
-[00:03:01.422] Browser LOG     测试
-[00:03:14.015] Server  LOG      ✓ Compiled in 66ms
-[00:05:16.157] Browser LOG     测试
-[00:05:16.559] Browser LOG     测试
-[00:05:16.808] Browser LOG     测试
-[00:05:17.957] Browser LOG     测试
-[00:05:18.420] Browser LOG     测试
-[00:05:18.674] Browser LOG     测试
-[00:05:18.874] Browser LOG     测试
-[00:05:19.237] Browser LOG     测试
-[00:05:19.374] Browser LOG     测试
-[00:05:19.540] Browser LOG     测试
-[00:05:19.725] Browser LOG     测试
-[00:05:54.208] Browser LOG     测试
-[00:05:54.657] Browser LOG     测试
-[00:05:55.140] Browser LOG     测试
-[00:05:55.407] Browser LOG     测试
-[00:06:09.753] Browser LOG     测试
-[00:06:09.904] Browser LOG     测试
-[00:06:10.057] Browser LOG     测试
-[00:06:10.189] Browser LOG     测试
-[00:06:10.519] Browser LOG     测试
-[00:06:10.520] Browser LOG     测试
-[00:08:13.127] Server  LOG      ✓ Compiled in 21ms
-[00:08:15.734] Browser LOG     测试
-[00:08:16.372] Browser LOG     测试
-[00:08:16.641] Browser LOG     测试
-[00:08:16.824] Browser LOG     测试
-[00:08:17.024] Browser LOG     测试
-[00:08:17.242] Browser LOG     测试
-[00:08:17.407] Browser LOG     测试
-[00:08:17.559] Browser LOG     测试
-[00:08:17.725] Browser LOG     测试
-[00:08:17.944] Browser LOG     测试
-[00:24:12.202] Browser LOG     测试
-[00:24:12.561] Browser LOG     测试
-[00:24:12.725] Browser LOG     测试
-[00:24:12.874] Browser LOG     测试
-[00:25:36.695] Server  LOG      ✓ Compiled in 80ms
-[00:25:41.812] Browser LOG     测试
-[00:25:42.359] Browser LOG     测试
-[00:25:45.376] Browser LOG     测试
-[00:25:45.825] Browser LOG     测试
-[00:25:46.457] Browser LOG     测试
-[00:25:46.908] Browser LOG     测试
-[00:25:47.075] Browser LOG     测试
-[00:25:47.291] Browser LOG     测试
-[00:25:47.458] Browser LOG     测试
-[00:25:47.608] Browser LOG     测试
-[00:25:47.758] Browser LOG     测试
-[00:25:47.890] Browser LOG     测试
-[00:25:48.042] Browser LOG     测试
-[00:25:48.292] Browser LOG     测试
-[00:26:01.359] Browser LOG     测试
-[00:26:01.544] Browser LOG     测试
-[00:26:01.709] Browser LOG     测试
-[00:26:04.075] Browser LOG     测试
+[00:00:00.821] Server  LOG      ✓ Ready in 620ms
+[00:00:10.027] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:13.247] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:13.841] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:14.293] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:14.609] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:05:41.626] Server  LOG      ✓ Compiled in 47ms
+[00:08:58.824] Server  LOG      ✓ Compiled in 31ms
+[01:18:05.670] Server  LOG      ✓ Compiled in 65ms
+[01:26:26.508] Server  LOG      ✓ Compiled in 26ms
+[01:26:29.832] Server  LOG      ✓ Compiled in 13ms
+[01:26:33.312] Server  LOG      ✓ Compiled in 13ms
+[01:27:14.584] Server  LOG      ✓ Compiled in 17ms
+[01:27:48.239] Server  LOG      ✓ Compiled in 17ms
+[01:27:52.683] Server  LOG      ✓ Compiled in 17ms

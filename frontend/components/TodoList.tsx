@@ -56,7 +56,7 @@ function TodoList({ todos, toggleTodo, deleteTodo }: TodoListProps) {
               <Button
                 variant="ghost"
                 size="sm"
-                className="rounded-full px-3 bg-slate-300 text-slate-800 hover:bg-slate-200 disabled:opacity-20"
+                className="px-3 bg-slate-300 text-slate-800 hover:bg-slate-200 disabled:opacity-20"
                 onClick={handlePrev}
                 disabled={currentPage === 1}
               >
@@ -65,7 +65,7 @@ function TodoList({ todos, toggleTodo, deleteTodo }: TodoListProps) {
               <Button
                 variant="ghost"
                 size="sm"
-                className="rounded-full px-3 bg-slate-300 text-slate-800 hover:bg-slate-200 disabled:opacity-20"
+                className="px-3 bg-slate-300 text-slate-800 hover:bg-slate-200 disabled:opacity-20"
                 onClick={handleNext}
                 disabled={currentPage === totalPages}
               >

@@ -5,33 +5,86 @@ import TodoList from "@/components/TodoList";
 import {Card} from "@/components/ui/card"
 import { Todo, Filter } from "@/types";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function Home() {
 
   const [todos, setTodos] = useState<Todo[]>([])
   const [filter, setFilter] = useState<Filter>('all')
-  const addTodo = (text: string) => {
-    const newTodo = {
-      id: Date.now(),
-      text,
-      completed: false
-    }
-    setTodos([...todos, newTodo])
-  }
+  const [loading, setLoading] = useState<boolean>(false)
 
-  const deleteTodo = (id: number) => {
-    setTodos(todos.filter(todo => todo.id !== id))
-  }
-
-  const toggleTodo = (id: number) => {
-    setTodos(todos.map(todo => {
-      if (todo.id === id) {
-        todo.completed = !todo.completed
+  useEffect(() => {
+    const fetchTodos = async () => {
+      setLoading(true)
+      try {
+        const res = await fetch("/api/todos")
+        if (!res.ok) throw new Error("加载待办失败")
+        const data: Todo[] = await res.json()
+        setTodos(data)
+      } catch (err) {
+        console.error(err)
+      } finally {
+        setLoading(false)
       }
-      return todo
-    }))
+    }
+
+    fetchTodos()
+  }, [])
+
+  const addTodo = async (text: string) => {
+    try {
+      const res = await fetch("/api/todos", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text }),
+      })
+
+      if (!res.ok) throw new Error("新增待办失败")
+
+      const newTodo: Todo = await res.json()
+      setTodos((prev) => [...prev, newTodo])
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  const deleteTodo = async (id: number) => {
+    try {
+      const res = await fetch("/api/todos", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id }),
+      })
+
+      if (!res.ok) throw new Error("删除待办失败")
+
+      setTodos((prev) => prev.filter((todo) => todo.id !== id))
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  const toggleTodo = async (id: number) => {
+    try {
+      const target = todos.find((t) => t.id === id)
+      if (!target) return
+
+      const res = await fetch("/api/todos", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, completed: !target.completed }),
+      })
+
+      if (!res.ok) throw new Error("更新待办失败")
+
+      const updated: Todo = await res.json()
+      setTodos((prev) =>
+        prev.map((todo) => (todo.id === id ? updated : todo))
+      )
+    } catch (err) {
+      console.error(err)
+    }
   }
 
   const getFilteredTodos = () => {

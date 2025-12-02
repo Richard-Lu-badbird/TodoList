@@ -166,6 +166,7 @@ function AddTodo({ addTodo }) {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                    className: "duration-200 transition-all hover:scale-105 active:scale-95",
                     type: "submit",
                     children: "新建事项"
                 }, void 0, false, {
@@ -207,7 +208,7 @@ function TodoFilter({ filter, counts, setFilter }) {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                 variant: "ghost",
-                className: `rounded-full px-4 shadow-sm transition-all duration-200 hover:scale-105 active:scale-95 
+                className: `px-4 shadow-sm transition-all duration-200 hover:scale-105 active:scale-95 
                     ${filter === 'all' ? 'bg-slate-300 text-slate-900 ring-2 ring-slate-400 hover:bg-slate-300' : 'bg-slate-200 text-slate-800 hover:bg-slate-300'}`,
                 onClick: ()=>setFilter('all'),
                 children: [
@@ -222,7 +223,7 @@ function TodoFilter({ filter, counts, setFilter }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                 variant: "ghost",
-                className: `rounded-full px-4 shadow-sm transition-all duration-200 hover:scale-105 active:scale-95 
+                className: `px-4 shadow-sm transition-all duration-200 hover:scale-105 active:scale-95 
                     ${filter === 'active' ? 'bg-amber-300 text-amber-950 ring-2 ring-amber-400 hover:bg-amber-300' : 'bg-amber-200 text-amber-900 hover:bg-amber-300'}`,
                 onClick: ()=>setFilter('active'),
                 children: [
@@ -237,7 +238,7 @@ function TodoFilter({ filter, counts, setFilter }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                 variant: "ghost",
-                className: `rounded-full px-4 shadow-sm transition-all duration-200 hover:scale-105 active:scale-95 
+                className: `px-4 shadow-sm transition-all duration-200 hover:scale-105 active:scale-95 
                     ${filter === 'completed' ? 'bg-emerald-300 text-emerald-950 ring-2 ring-emerald-400 hover:bg-emerald-300' : 'bg-emerald-200 text-emerald-900 hover:bg-emerald-300'}`,
                 onClick: ()=>setFilter('completed'),
                 children: [
@@ -564,7 +565,7 @@ function TodoList({ todos, toggleTodo, deleteTodo }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                     variant: "ghost",
                                     size: "sm",
-                                    className: "rounded-full px-3 bg-slate-300 text-slate-800 hover:bg-slate-200 disabled:opacity-20",
+                                    className: "px-3 bg-slate-300 text-slate-800 hover:bg-slate-200 disabled:opacity-20",
                                     onClick: handlePrev,
                                     disabled: currentPage === 1,
                                     children: "上一页"
@@ -576,7 +577,7 @@ function TodoList({ todos, toggleTodo, deleteTodo }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                     variant: "ghost",
                                     size: "sm",
-                                    className: "rounded-full px-3 bg-slate-300 text-slate-800 hover:bg-slate-200 disabled:opacity-20",
+                                    className: "px-3 bg-slate-300 text-slate-800 hover:bg-slate-200 disabled:opacity-20",
                                     onClick: handleNext,
                                     disabled: currentPage === totalPages,
                                     children: "下一页"
@@ -645,27 +646,85 @@ function Home() {
     _s();
     const [todos, setTodos] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [filter, setFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('all');
-    const addTodo = (text)=>{
-        const newTodo = {
-            id: Date.now(),
-            text,
-            completed: false
-        };
-        setTodos([
-            ...todos,
-            newTodo
-        ]);
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Home.useEffect": ()=>{
+            const fetchTodos = {
+                "Home.useEffect.fetchTodos": async ()=>{
+                    setLoading(true);
+                    try {
+                        const res = await fetch("/api/todos");
+                        if (!res.ok) throw new Error("加载待办失败");
+                        const data = await res.json();
+                        setTodos(data);
+                    } catch (err) {
+                        console.error(err);
+                    } finally{
+                        setLoading(false);
+                    }
+                }
+            }["Home.useEffect.fetchTodos"];
+            fetchTodos();
+        }
+    }["Home.useEffect"], []);
+    const addTodo = async (text)=>{
+        try {
+            const res = await fetch("/api/todos", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    text
+                })
+            });
+            if (!res.ok) throw new Error("新增待办失败");
+            const newTodo = await res.json();
+            setTodos((prev)=>[
+                    ...prev,
+                    newTodo
+                ]);
+        } catch (err) {
+            console.error(err);
+        }
     };
-    const deleteTodo = (id)=>{
-        setTodos(todos.filter((todo)=>todo.id !== id));
+    const deleteTodo = async (id)=>{
+        try {
+            const res = await fetch("/api/todos", {
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    id
+                })
+            });
+            if (!res.ok) throw new Error("删除待办失败");
+            setTodos((prev)=>prev.filter((todo)=>todo.id !== id));
+        } catch (err) {
+            console.error(err);
+        }
     };
-    const toggleTodo = (id)=>{
-        setTodos(todos.map((todo)=>{
-            if (todo.id === id) {
-                todo.completed = !todo.completed;
-            }
-            return todo;
-        }));
+    const toggleTodo = async (id)=>{
+        try {
+            const target = todos.find((t)=>t.id === id);
+            if (!target) return;
+            const res = await fetch("/api/todos", {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    id,
+                    completed: !target.completed
+                })
+            });
+            if (!res.ok) throw new Error("更新待办失败");
+            const updated = await res.json();
+            setTodos((prev)=>prev.map((todo)=>todo.id === id ? updated : todo));
+        } catch (err) {
+            console.error(err);
+        }
     };
     const getFilteredTodos = ()=>{
         switch(filter){
@@ -697,7 +756,7 @@ function Home() {
                             children: "TodoList"
                         }, void 0, false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 68,
+                            lineNumber: 121,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -708,7 +767,7 @@ function Home() {
                                     children: "Made by @Richard"
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 126,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -719,26 +778,26 @@ function Home() {
                                     className: "ml-2"
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 129,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 72,
+                            lineNumber: 125,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 67,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$AddTodo$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     addTodo: addTodo
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 85,
+                    lineNumber: 138,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$TodoList$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -747,7 +806,7 @@ function Home() {
                     toggleTodo: toggleTodo
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 86,
+                    lineNumber: 139,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$TodoFilter$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -756,22 +815,22 @@ function Home() {
                     setFilter: setFilter
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 87,
+                    lineNumber: 140,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/page.tsx",
-            lineNumber: 58,
+            lineNumber: 111,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 57,
+        lineNumber: 110,
         columnNumber: 5
     }, this);
 }
-_s(Home, "4ldVzuGdHG+qAH/CA1Vao+E5AT0=");
+_s(Home, "TXJxEIMQmlHXYzxhIdEP+jk7WPk=");
 _c = Home;
 var _c;
 __turbopack_context__.k.register(_c, "Home");

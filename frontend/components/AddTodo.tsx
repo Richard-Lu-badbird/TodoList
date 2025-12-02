@@ -33,7 +33,9 @@ function AddTodo({ addTodo }: { addTodo: (text: string) => void }) {
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <Button type="submit">新建事项</Button>
+        <Button
+          className="duration-200 transition-all hover:scale-105 active:scale-95"
+        type="submit">新建事项</Button>
       </form>
 
       {/* AlertDialog 只用于弹窗 */}
