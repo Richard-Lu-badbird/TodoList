@@ -3,12 +3,11 @@
 TodoList是一个简单的前端练手项目，可以创建TodoItem，帮你规划好你的日程
 
 # 技术栈
-- React ![Static Badge](https://img.shields.io/badge/React-8A2BE2)
-- Next.js ![Static Badge](https://img.shields.io/badge/Next.js-orange)
-- Tailwind CSS ![Static Badge](https://img.shields.io/badge/tailwind%20CSS-blue)
-
+- React <img src="https://img.shields.io/badge/React-8A2BE2" style="vertical-align: middle;" />
+- Next.js <img src="https://img.shields.io/badge/Next.js-orange" style="vertical-align: middle;" />
+- Tailwind CSS <img src="https://img.shields.io/badge/tailwind%20CSS-blue" style="vertical-align: middle;" />
 
 # UI库
-- shadcn ![Static Badge](https://img.shields.io/badge/shadcn-black)
+- shadcn <img src="https://img.shields.io/badge/shadcn-black" style="vertical-align: middle;" />
 
 > 个人练手
