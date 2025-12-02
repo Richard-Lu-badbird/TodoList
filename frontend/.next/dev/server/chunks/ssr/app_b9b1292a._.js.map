@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/ludaheng/Desktop/codes/React%E5%AD%A6%E4%B9%A0/%E5%90%B4%E6%82%A0React%E8%AF%BE%E7%A8%8B/todolist/todolist/app/favicon.ico.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 256, height: 256 }\n"],"names":[],"mappings":";;;;AAAA;;uCACe;IAAE,KAAA,mIAAG;IAAE,OAAO;IAAK,QAAQ;AAAI"}}]
+}
