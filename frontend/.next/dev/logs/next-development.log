@@ -1,42 +1,70 @@
-[00:00:00.726] Server  LOG      ✓ Ready in 557ms
-[00:00:05.587] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="/frontend/...">
-                      <SegmentTrieNode>
-                      <link>
-                      <script>
-                      <script>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
--                           data-atm-ext-installed="1.29.12"
-                          >
-                  ...
-
-[00:02:51.161] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:23:46.982] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:24:08.568] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:24:19.621] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:26:32.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.800] Server  LOG      ✓ Ready in 602ms
+[00:03:17.659] Server  LOG      ✓ Compiled in 30ms
+[00:03:20.144] Server  LOG      ✓ Compiled in 37ms
+[00:03:32.866] Server  LOG      ✓ Compiled in 19ms
+[00:03:35.251] Server  LOG      ✓ Compiled in 15ms
+[00:04:11.127] Browser LOG     测试
+[00:04:11.237] Browser LOG     测试
+[00:04:11.424] Browser LOG     测试
+[00:04:11.590] Browser LOG     测试
+[00:04:11.759] Browser LOG     测试
+[00:04:11.910] Browser LOG     测试
+[00:04:12.220] Browser LOG     测试
+[00:04:12.359] Browser LOG     测试
+[00:04:12.541] Browser LOG     测试
+[00:04:12.691] Browser LOG     测试
+[00:04:12.843] Browser LOG     测试
+[00:04:13.249] Browser LOG     测试
+[00:04:13.412] Browser LOG     测试
+[00:04:13.605] Browser LOG     测试
+[00:04:13.772] Browser LOG     测试
+[00:04:13.924] Browser LOG     测试
+[00:04:14.090] Browser LOG     测试
+[00:04:14.257] Browser LOG     测试
+[00:04:14.390] Browser LOG     测试
+[04:05:52.669] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:55:03.910] Server  LOG     req is:  {}
+[04:56:57.857] Server  LOG     req is:  {}
+[04:56:57.858] Server  LOG     id is:  3
+[04:57:37.846] Server  LOG     req is:  {}
+[04:57:37.846] Server  LOG     req.json() is:  {}
+[04:57:37.912] Server  ERROR   TypeError: Body is unusable: Body has already been read
+[04:57:38.017] Browser ERROR   {}
+[04:58:33.708] Server  LOG     req is:  {}
+[04:58:33.709] Server  LOG     id is:  4
+[05:14:14.376] Server  LOG     id is:  4
+[05:14:14.812] Server  LOG     id is:  4
+[05:14:15.240] Server  LOG     id is:  4
+[05:14:15.445] Server  LOG     id is:  4
+[05:14:15.680] Server  LOG     id is:  4
+[05:14:16.205] Server  LOG     id is:  4
+[05:14:16.562] Server  LOG     id is:  4
+[05:14:17.003] Server  LOG     id is:  4
+[05:14:17.435] Server  LOG     id is:  4
+[05:14:17.918] Server  LOG     id is:  4
+[05:14:18.451] Server  LOG     id is:  4
+[05:14:18.861] Server  LOG     id is:  4
+[05:14:19.361] Server  LOG     id is:  4
+[05:14:19.851] Server  LOG     id is:  4
+[05:14:20.149] Server  LOG     id is:  4
+[05:14:20.315] Server  LOG     id is:  4
+[05:14:20.542] Server  LOG     id is:  4
+[05:14:20.782] Server  LOG     id is:  4
+[05:14:21.011] Server  LOG     id is:  4
+[05:14:21.195] Server  LOG     id is:  4
+[05:14:21.429] Server  LOG     id is:  4
+[05:14:21.882] Server  LOG     id is:  4
+[05:14:22.703] Server  LOG     id is:  4
+[05:14:23.218] Server  LOG     id is:  4
+[05:14:23.856] Server  LOG     id is:  4
+[05:17:38.326] Server  LOG      ✓ Compiled in 32ms
+[05:21:34.634] Server  LOG      ✓ Compiled in 23ms
+[05:24:19.933] Server  LOG      ✓ Compiled in 23ms
+[05:24:20.031] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: getFilteredTodos
+[05:39:31.026] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:39:31.038] Server  LOG      ✓ Compiled in 43ms
+[05:39:31.088] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: getFilteredTodos
+[05:39:31.274] Server  ERROR    ⨯ ReferenceError: getFilteredTodos is not defined
+[05:39:31.606] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: getFilteredTodos
+[05:39:45.815] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:39:45.902] Server  LOG      ✓ Compiled in 16ms

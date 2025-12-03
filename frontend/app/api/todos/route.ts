@@ -52,8 +52,7 @@ export async function POST(req: NextRequest) {
   }
 
   const todos = loadInitialTodos();
-  const nextId = todos.length ? Math.max(...todos.map((t) => t.id)) + 1 : 1;
-  const newTodo: Todo = { id: nextId, text, completed: Boolean(completed) };
+  const newTodo: Todo = { id: Date.now(), text, completed: Boolean(completed) };
 
   todos.push(newTodo);
   todosCache = todos;
@@ -64,7 +63,7 @@ export async function POST(req: NextRequest) {
 
 export async function PUT(req: NextRequest) {
   const { id, text, completed } = await req.json();
-
+  console.log("id is: ", id)
   if (typeof id !== "number") {
     return NextResponse.json(
       { error: "id 为必填数字" },

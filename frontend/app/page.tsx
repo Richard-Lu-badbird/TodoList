@@ -14,6 +14,9 @@ export default function Home() {
   const [filter, setFilter] = useState<Filter>('all')
   const [loading, setLoading] = useState<boolean>(false)
 
+  const orderTodos = () => {
+    
+  }
   useEffect(() => {
     const fetchTodos = async () => {
       setLoading(true)
@@ -31,6 +34,7 @@ export default function Home() {
 
     fetchTodos()
   }, [])
+
 
   const addTodo = async (text: string) => {
     try {
@@ -87,16 +91,31 @@ export default function Home() {
     }
   }
 
+  // const getFilteredTodos = () => {
+  //   const sorted = [...todos].sort((a, b) => b.id - a.id) // 按创建时间（id 越大越新）从新到旧
+  //   switch (filter) {
+  //     case 'completed':
+  //       return sorted.filter(todo => todo.completed)
+  //     case 'active':
+  //       return sorted.filter(todo => !todo.completed)
+  //     default:
+  //       return sorted
+  //   }
+  // }
   const getFilteredTodos = () => {
+    //按照创建时间（id越大越新），从新到旧
+    const sorted = [...todos].sort((a, b) => b.id - a.id)
     switch (filter) {
       case 'completed':
-        return todos.filter(todo => todo.completed)
+        return sorted.filter(todo => todo.completed)
       case 'active':
-        return todos.filter(todo => !todo.completed)
+        return sorted.filter(todo => !todo.completed)
       default:
-        return todos
+        return sorted
     }
   }
+
+
 
   const completedCount = todos.filter(todo => todo.completed).length
   const activeCount = todos.length - completedCount
