@@ -68,13 +68,6 @@ export default function Home() {
       console.error(err)
     }
   }
-  const configTodo = async (id: number) => {
-    try {
-      
-    } catch (error) {
-      
-    }
-  }
   const toggleTodo = async (id: number) => {
     try {
       const target = todos.find((t) => t.id === id)
@@ -162,7 +155,7 @@ export default function Home() {
             </div>
         </div>
         <AddTodo addTodo={addTodo}></AddTodo>
-        <TodoList todos={getFilteredTodos()} deleteTodo={deleteTodo} toggleTodo={toggleTodo} configTodo={configTodo} ></TodoList>
+        <TodoList todos={getFilteredTodos()} deleteTodo={deleteTodo} toggleTodo={toggleTodo} ></TodoList>
         <TodoFilter counts={counts} filter={filter} setFilter={setFilter}></TodoFilter>
       </Card>
     </div>

@@ -3,18 +3,21 @@ import { Todo } from "@/types";
 import TodoItem from "./TodoItem";
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import TodoDetailsDialog from "./TodoDetailsDialog"
 
 interface TodoListProps {
   todos: Array<Todo>;
   toggleTodo: (id: number) => void;
   deleteTodo: (id: number) => void;
-  configTodo: (id: number) => void;
 }
 
-function TodoList({ todos, toggleTodo, deleteTodo, configTodo }: TodoListProps) {
+function TodoList({ todos, toggleTodo, deleteTodo }: TodoListProps) {
+  const RESET_DIALOG_DELAY = 200 // wait for close animation
   const PAGE_SIZE = 5
   const ITEM_SLOT_HEIGHT = 72
   const [currentPage, setCurrentPage] = useState(1)
+  const [detailTodo, setDetailTodo] = useState<Todo | null>(null)
+  const [detailOpen, setDetailOpen] = useState(false)
 
   const totalPages = Math.max(1, Math.ceil(todos.length / PAGE_SIZE))
   const paginatedTodos = useMemo(() => {
@@ -31,6 +34,11 @@ function TodoList({ todos, toggleTodo, deleteTodo, configTodo }: TodoListProps) 
 
   const handlePrev = () => setCurrentPage((p) => Math.max(1, p - 1))
   const handleNext = () => setCurrentPage((p) => Math.min(totalPages, p + 1))
+  const openDetails = (todo: Todo) => {
+    setDetailTodo(todo)
+    setDetailOpen(true)
+  }
+
 
   return (
     <div className="w-full">
@@ -45,10 +53,20 @@ function TodoList({ todos, toggleTodo, deleteTodo, configTodo }: TodoListProps) 
               todo={todo}
               toggleTodo={toggleTodo}
               deleteTodo={deleteTodo}
-              configTodo={configTodo}
+              onShowDetails={openDetails}
             ></TodoItem>
           ))}
         </ul>
+        <TodoDetailsDialog
+          detailOpen={detailOpen}
+          detailTodo={detailTodo}
+          onOpenChange={(open) => {
+            setDetailOpen(open)
+            if (!open) {
+              setTimeout(() => setDetailTodo(null), RESET_DIALOG_DELAY)
+            }
+          }}
+        />
         
           <div className="flex w-full justify-end items-center gap-4 px-4 pb-4 pt-2 text-sm text-muted-foreground">
             <div className="text-xs md:text-sm">

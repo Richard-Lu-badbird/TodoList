@@ -116,3 +116,96 @@ Import traces:
 [00:43:54.400] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
 [00:45:48.328] Server  LOG      ✓ Compiled in 32ms
 [00:45:58.308] Server  LOG      ✓ Compiled in 20ms
+[00:49:19.351] Server  LOG     id is:  1764902963772
+[00:49:19.831] Server  LOG     id is:  1764902963772
+[00:49:20.359] Server  LOG     id is:  1764902963772
+[00:49:20.732] Server  LOG     id is:  1764902963772
+[00:51:20.266] Server  LOG      ✓ Compiled in 18ms
+[00:51:38.638] Server  LOG      ✓ Compiled in 209ms
+[00:51:47.325] Server  LOG      ✓ Compiled in 14ms
+[00:57:31.263] Server  LOG      ✓ Compiled in 43ms
+[00:57:56.335] Server  LOG      ✓ Compiled in 27ms
+[01:00:01.150] Server  LOG      ✓ Compiled in 53ms
+[01:02:59.910] Server  LOG     id is:  1764902957907
+[01:03:00.144] Server  LOG     id is:  1764902957907
+[01:03:00.379] Server  LOG     id is:  1764902957907
+[01:03:00.580] Server  LOG     id is:  1764902957907
+[01:03:00.750] Server  LOG     id is:  1764902957907
+[01:03:00.914] Server  LOG     id is:  1764902957907
+[01:03:01.076] Server  LOG     id is:  1764902957907
+[01:03:01.306] Server  LOG     id is:  1764902957907
+[01:03:01.448] Server  LOG     id is:  1764902957907
+[01:03:01.783] Server  LOG     id is:  1764902957907
+[01:03:01.947] Server  LOG     id is:  1764902957907
+[01:03:02.129] Server  LOG     id is:  1764902957907
+[01:03:02.276] Server  LOG     id is:  1764902957907
+[01:03:02.564] Server  LOG     id is:  1764902957907
+[01:03:03.032] Server  LOG     id is:  1764902957907
+[01:03:03.213] Server  LOG     id is:  1764902957907
+[01:03:03.550] Server  LOG     id is:  1764902957907
+[01:38:26.923] Server  LOG      ✓ Compiled in 112ms
+[01:38:27.109] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: formatDateTime
+[01:41:04.275] Server  LOG      ✓ Compiled in 119ms
+[01:42:10.792] Browser LOG     测试
+[03:30:21.170] Server  LOG      ✓ Compiled in 137ms
+[03:30:45.229] Server  LOG      ✓ Compiled in 15ms
+[03:30:47.752] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
+      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
+        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
+          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
+            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
+              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
+                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
+                  <DialogHeader>
+                  <div>
+                  <DialogFooter>
+                    <div data-slot="dialog-footer" className="flex flex-...">
+                      <DialogClose>
+                        <DialogClose data-slot="dialog-close">
+                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
+>                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
+                              <Button variant="outline">
+>                               <button
+>                                 data-slot="button"
+>                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+>                               >
+                  ...
+    ...
+
+[03:30:47.752] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
+[03:57:14.828] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:16.529] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
+      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
+        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
+          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
+            <DismissableLayer role="dialog" id="radix-_R_j..." aria-describedby="radix-_R_j..." ...>
+              <Primitive.div role="dialog" id="radix-_R_j..." aria-describedby="radix-_R_j..." ...>
+                <div role="dialog" id="radix-_R_j..." aria-describedby="radix-_R_j..." aria-labelledby="radix-_R_j..." ...>
+                  <DialogHeader>
+                  <div>
+                  <DialogFooter>
+                    <div data-slot="dialog-footer" className="flex flex-...">
+                      <DialogClose>
+                        <DialogClose data-slot="dialog-close">
+                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
+>                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
+                              <Button variant="outline">
+>                               <button
+>                                 data-slot="button"
+>                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
+>                               >
+                      ...
+                  ...
+    ...
+
+[03:57:16.529] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
