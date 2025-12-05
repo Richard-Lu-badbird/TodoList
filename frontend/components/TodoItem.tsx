@@ -1,5 +1,5 @@
 import {Button} from "@/components/ui/button"
-function TodoItem({todo, toggleTodo, deleteTodo}:any) {
+function TodoItem({todo, toggleTodo, deleteTodo, configTodo}:any) {
   return (
     <li className="flex items-center justify-between p-4 rounded-lg transition-all duration-200 hover:shadow-sm animate-in fade-in slide-in-from-bottom-1 group">
       <div className="flex items-center gap-3 flex-1">
@@ -17,6 +17,14 @@ function TodoItem({todo, toggleTodo, deleteTodo}:any) {
           {todo.text}
         </span>
       </div>
+      <Button
+        onClick={() => configTodo(todo.id)}
+        variant="outline"
+        size="sm"
+        className="opacity-70 transition-all duration-200 hover:opacity-100 hover:scale-105 hover:shadow-md active:scale-95 mr-2"
+        >
+        详情
+      </Button>
       <Button 
         onClick={() => deleteTodo(todo.id)}
         variant="destructive" 

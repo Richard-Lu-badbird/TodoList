@@ -1,70 +1,118 @@
-[00:00:00.800] Server  LOG      ✓ Ready in 602ms
-[00:03:17.659] Server  LOG      ✓ Compiled in 30ms
-[00:03:20.144] Server  LOG      ✓ Compiled in 37ms
-[00:03:32.866] Server  LOG      ✓ Compiled in 19ms
-[00:03:35.251] Server  LOG      ✓ Compiled in 15ms
-[00:04:11.127] Browser LOG     测试
-[00:04:11.237] Browser LOG     测试
-[00:04:11.424] Browser LOG     测试
-[00:04:11.590] Browser LOG     测试
-[00:04:11.759] Browser LOG     测试
-[00:04:11.910] Browser LOG     测试
-[00:04:12.220] Browser LOG     测试
-[00:04:12.359] Browser LOG     测试
-[00:04:12.541] Browser LOG     测试
-[00:04:12.691] Browser LOG     测试
-[00:04:12.843] Browser LOG     测试
-[00:04:13.249] Browser LOG     测试
-[00:04:13.412] Browser LOG     测试
-[00:04:13.605] Browser LOG     测试
-[00:04:13.772] Browser LOG     测试
-[00:04:13.924] Browser LOG     测试
-[00:04:14.090] Browser LOG     测试
-[00:04:14.257] Browser LOG     测试
-[00:04:14.390] Browser LOG     测试
-[04:05:52.669] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[04:55:03.910] Server  LOG     req is:  {}
-[04:56:57.857] Server  LOG     req is:  {}
-[04:56:57.858] Server  LOG     id is:  3
-[04:57:37.846] Server  LOG     req is:  {}
-[04:57:37.846] Server  LOG     req.json() is:  {}
-[04:57:37.912] Server  ERROR   TypeError: Body is unusable: Body has already been read
-[04:57:38.017] Browser ERROR   {}
-[04:58:33.708] Server  LOG     req is:  {}
-[04:58:33.709] Server  LOG     id is:  4
-[05:14:14.376] Server  LOG     id is:  4
-[05:14:14.812] Server  LOG     id is:  4
-[05:14:15.240] Server  LOG     id is:  4
-[05:14:15.445] Server  LOG     id is:  4
-[05:14:15.680] Server  LOG     id is:  4
-[05:14:16.205] Server  LOG     id is:  4
-[05:14:16.562] Server  LOG     id is:  4
-[05:14:17.003] Server  LOG     id is:  4
-[05:14:17.435] Server  LOG     id is:  4
-[05:14:17.918] Server  LOG     id is:  4
-[05:14:18.451] Server  LOG     id is:  4
-[05:14:18.861] Server  LOG     id is:  4
-[05:14:19.361] Server  LOG     id is:  4
-[05:14:19.851] Server  LOG     id is:  4
-[05:14:20.149] Server  LOG     id is:  4
-[05:14:20.315] Server  LOG     id is:  4
-[05:14:20.542] Server  LOG     id is:  4
-[05:14:20.782] Server  LOG     id is:  4
-[05:14:21.011] Server  LOG     id is:  4
-[05:14:21.195] Server  LOG     id is:  4
-[05:14:21.429] Server  LOG     id is:  4
-[05:14:21.882] Server  LOG     id is:  4
-[05:14:22.703] Server  LOG     id is:  4
-[05:14:23.218] Server  LOG     id is:  4
-[05:14:23.856] Server  LOG     id is:  4
-[05:17:38.326] Server  LOG      ✓ Compiled in 32ms
-[05:21:34.634] Server  LOG      ✓ Compiled in 23ms
-[05:24:19.933] Server  LOG      ✓ Compiled in 23ms
-[05:24:20.031] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: getFilteredTodos
-[05:39:31.026] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[05:39:31.038] Server  LOG      ✓ Compiled in 43ms
-[05:39:31.088] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: getFilteredTodos
-[05:39:31.274] Server  ERROR    ⨯ ReferenceError: getFilteredTodos is not defined
-[05:39:31.606] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: getFilteredTodos
-[05:39:45.815] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[05:39:45.902] Server  LOG      ✓ Compiled in 16ms
+[00:00:00.757] Server  LOG      ✓ Ready in 568ms
+[00:00:26.382] Browser LOG     测试
+[00:00:26.948] Browser LOG     测试
+[00:00:27.483] Browser LOG     测试
+[00:00:27.735] Browser LOG     测试
+[00:00:27.917] Browser LOG     测试
+[00:00:28.267] Browser LOG     测试
+[00:00:28.435] Browser LOG     测试
+[00:00:28.669] Browser LOG     测试
+[00:00:28.904] Browser LOG     测试
+[00:02:25.277] Server  LOG      ✓ Compiled in 33ms
+[00:02:25.380] Browser ERROR   ./frontend/app/page.tsx:129:3
+Parsing ecmascript source code failed
+  127 |
+  128 |   const configTodo = 
+> 129 |   return (
+      |   ^^^^^^
+  130 |     <div className="min-h-screen flex items-center justify-center p-6 bg-gray-50">
+  131 |       <Card className="w-full max-w-4xl p-6 space-y-4 rounded-xl shadow-lg bg-white">
+  132 |         {/* <div className="flex justify-between item-center">
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/page.tsx [Client Component Browser]
+    ./frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/page.tsx [Client Component SSR]
+    ./frontend/app/page.tsx [Server Component]
+[00:04:08.657] Server  LOG      ✓ Compiled in 18ms
+[00:04:22.635] Server  LOG      ✓ Compiled in 18ms
+[00:04:36.659] Server  LOG      ✓ Compiled in 16ms
+[00:04:57.342] Server  LOG      ✓ Compiled in 20ms
+[00:04:57.445] Browser ERROR   ./frontend/components/TodoItem.tsx:22:24
+Parsing ecmascript source code failed
+  20 |       <Button
+  21 |         onClick={() => configTodo(todo.id)}
+> 22 |         variant="ghost"}
+     |                        ^
+  23 |         >
+  24 |         详情
+  25 |       </Button>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./frontend/components/TodoItem.tsx [Client Component Browser]
+    ./frontend/components/TodoList.tsx [Client Component Browser]
+    ./frontend/app/page.tsx [Client Component Browser]
+    ./frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/components/TodoItem.tsx [Client Component SSR]
+    ./frontend/components/TodoList.tsx [Client Component SSR]
+    ./frontend/app/page.tsx [Client Component SSR]
+    ./frontend/app/page.tsx [Server Component]
+[00:05:04.508] Browser ERROR   ./frontend/components/TodoItem.tsx:22:19
+Parsing ecmascript source code failed
+  20 |       <Button
+  21 |         onClick={() => configTodo(todo.id)}
+> 22 |         variant=""}
+     |                   ^
+  23 |         >
+  24 |         详情
+  25 |       </Button>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./frontend/components/TodoItem.tsx [Client Component Browser]
+    ./frontend/components/TodoList.tsx [Client Component Browser]
+    ./frontend/app/page.tsx [Client Component Browser]
+    ./frontend/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/components/TodoItem.tsx [Client Component SSR]
+    ./frontend/components/TodoList.tsx [Client Component SSR]
+    ./frontend/app/page.tsx [Client Component SSR]
+    ./frontend/app/page.tsx [Server Component]
+[00:05:09.974] Server  LOG      ✓ Compiled in 14ms
+[00:05:19.541] Server  LOG      ✓ Compiled in 20ms
+[00:06:12.606] Server  LOG      ✓ Compiled in 13ms
+[00:07:01.598] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:07:01.818] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:07:01.983] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:07:02.982] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:07:16.149] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:07:20.099] Server  LOG     id is:  1764902989976
+[00:07:47.111] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:52.021] Browser ERROR   uncaughtError: TypeError: configTodo is not a function
+[00:07:54.370] Browser ERROR   uncaughtError: TypeError: configTodo is not a function
+[00:08:58.206] Server  LOG      ✓ Compiled in 25ms
+[00:09:18.698] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:09:19.500] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:09:19.853] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:09:20.715] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:09:20.898] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:09:21.751] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:09:21.883] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:09:22.530] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:09:22.718] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:11:53.370] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:12:10.761] Server  LOG      ✓ Compiled in 48ms
+[00:12:19.561] Server  LOG      ✓ Compiled in 24ms
+[00:12:27.486] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:12:40.085] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:12:40.317] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:12:40.765] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:13:43.876] Server  LOG      ✓ Compiled in 29ms
+[00:43:53.756] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:43:54.251] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:43:54.400] Browser ERROR   uncaughtError: TypeError: configTodo is not a function. (In 'configTodo(todo.id)', 'configTodo' is undefined)
+[00:45:48.328] Server  LOG      ✓ Compiled in 32ms
+[00:45:58.308] Server  LOG      ✓ Compiled in 20ms

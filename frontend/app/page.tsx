@@ -68,7 +68,13 @@ export default function Home() {
       console.error(err)
     }
   }
-
+  const configTodo = async (id: number) => {
+    try {
+      
+    } catch (error) {
+      
+    }
+  }
   const toggleTodo = async (id: number) => {
     try {
       const target = todos.find((t) => t.id === id)
@@ -125,6 +131,7 @@ export default function Home() {
     completed: completedCount
   }
 
+
   return (
     <div className="min-h-screen flex items-center justify-center p-6 bg-gray-50">
       <Card className="w-full max-w-4xl p-6 space-y-4 rounded-xl shadow-lg bg-white">
@@ -155,7 +162,7 @@ export default function Home() {
             </div>
         </div>
         <AddTodo addTodo={addTodo}></AddTodo>
-        <TodoList todos={getFilteredTodos()} deleteTodo={deleteTodo} toggleTodo={toggleTodo} ></TodoList>
+        <TodoList todos={getFilteredTodos()} deleteTodo={deleteTodo} toggleTodo={toggleTodo} configTodo={configTodo} ></TodoList>
         <TodoFilter counts={counts} filter={filter} setFilter={setFilter}></TodoFilter>
       </Card>
     </div>

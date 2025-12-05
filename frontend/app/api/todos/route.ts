@@ -6,6 +6,8 @@ type Todo = {
   id: number;
   text: string;
   completed: boolean;
+  startTime: Date;
+  endTime?: Date
 };
 
 let todosCache: Todo[] | null = null;
@@ -52,7 +54,7 @@ export async function POST(req: NextRequest) {
   }
 
   const todos = loadInitialTodos();
-  const newTodo: Todo = { id: Date.now(), text, completed: Boolean(completed) };
+  const newTodo: Todo = { id: Date.now(), text, completed: Boolean(completed), startTime: new Date() };
 
   todos.push(newTodo);
   todosCache = todos;

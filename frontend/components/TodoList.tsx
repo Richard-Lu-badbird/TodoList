@@ -8,9 +8,10 @@ interface TodoListProps {
   todos: Array<Todo>;
   toggleTodo: (id: number) => void;
   deleteTodo: (id: number) => void;
+  configTodo: (id: number) => void;
 }
 
-function TodoList({ todos, toggleTodo, deleteTodo }: TodoListProps) {
+function TodoList({ todos, toggleTodo, deleteTodo, configTodo }: TodoListProps) {
   const PAGE_SIZE = 5
   const ITEM_SLOT_HEIGHT = 72
   const [currentPage, setCurrentPage] = useState(1)
@@ -44,6 +45,7 @@ function TodoList({ todos, toggleTodo, deleteTodo }: TodoListProps) {
               todo={todo}
               toggleTodo={toggleTodo}
               deleteTodo={deleteTodo}
+              configTodo={configTodo}
             ></TodoItem>
           ))}
         </ul>
