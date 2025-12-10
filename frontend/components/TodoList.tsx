@@ -9,9 +9,15 @@ interface TodoListProps {
   todos: Array<Todo>;
   toggleTodo: (id: number) => void;
   deleteTodo: (id: number) => void;
+  updateTodo: (payload: {
+    id: number;
+    text?: string;
+    completed?: boolean;
+    startTime?: Date | null;
+  }) => void;
 }
 
-function TodoList({ todos, toggleTodo, deleteTodo }: TodoListProps) {
+function TodoList({ todos, toggleTodo, deleteTodo, updateTodo }: TodoListProps) {
   const RESET_DIALOG_DELAY = 200 // wait for close animation
   const PAGE_SIZE = 5
   const ITEM_SLOT_HEIGHT = 72
@@ -60,6 +66,7 @@ function TodoList({ todos, toggleTodo, deleteTodo }: TodoListProps) {
         <TodoDetailsDialog
           detailOpen={detailOpen}
           detailTodo={detailTodo}
+          updateTodo={updateTodo}
           onOpenChange={(open) => {
             setDetailOpen(open)
             if (!open) {

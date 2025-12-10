@@ -44,7 +44,7 @@ export async function GET() {
 }
 
 export async function POST(req: NextRequest) {
-  const { text, completed = false } = await req.json();
+  const { text, completed = false} = await req.json();
 
   if (!text || typeof text !== "string") {
     return NextResponse.json(
@@ -64,7 +64,7 @@ export async function POST(req: NextRequest) {
 }
 
 export async function PUT(req: NextRequest) {
-  const { id, text, completed } = await req.json();
+  const { id, text, completed, startTime } = await req.json();
   console.log("id is: ", id)
   if (typeof id !== "number") {
     return NextResponse.json(
@@ -82,7 +82,7 @@ export async function PUT(req: NextRequest) {
 
   if (text !== undefined) target.text = text;
   if (completed !== undefined) target.completed = Boolean(completed);
-
+  if (startTime !== undefined) target.startTime = startTime
   todosCache = todos;
   persistTodos(todos);
 

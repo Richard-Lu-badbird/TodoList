@@ -68,39 +68,25 @@ export default function Home() {
       console.error(err)
     }
   }
-  const toggleTodo = async (id: number) => {
-    try {
-      const target = todos.find((t) => t.id === id)
-      if (!target) return
-
-      const res = await fetch("/api/todos", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id, completed: !target.completed }),
-      })
-
-      if (!res.ok) throw new Error("更新待办失败")
-
-      const updated: Todo = await res.json()
-      setTodos((prev) =>
-        prev.map((todo) => (todo.id === id ? updated : todo))
-      )
-    } catch (err) {
-      console.error(err)
-    }
+  //更新待办信息
+  const updateTodo = async (payload: {id: number; text?: string; completed?: boolean; startTime?: Date | null}) => {
+    console.log('payload is ', payload)
+    const res = await fetch ("/api/todos", {
+      method: "PUT",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error("更新待办失败");
+    const updated: Todo = await res.json();
+    setTodos(prev => prev.map(t => (t.id === payload.id ? updated : t)))
   }
 
-  // const getFilteredTodos = () => {
-  //   const sorted = [...todos].sort((a, b) => b.id - a.id) // 按创建时间（id 越大越新）从新到旧
-  //   switch (filter) {
-  //     case 'completed':
-  //       return sorted.filter(todo => todo.completed)
-  //     case 'active':
-  //       return sorted.filter(todo => !todo.completed)
-  //     default:
-  //       return sorted
-  //   }
-  // }
+  const toggleTodo = async (id: number) => {
+    const target = todos.find(t => t.id === id)
+    if (!target) return;
+    await updateTodo({id, completed: !target.completed})
+  }
+
   const getFilteredTodos = () => {
     //按照创建时间（id越大越新），从新到旧
     const sorted = [...todos].sort((a, b) => b.id - a.id)
@@ -114,7 +100,7 @@ export default function Home() {
     }
   }
 
-
+  
 
   const completedCount = todos.filter(todo => todo.completed).length
   const activeCount = todos.length - completedCount
@@ -155,7 +141,7 @@ export default function Home() {
             </div>
         </div>
         <AddTodo addTodo={addTodo}></AddTodo>
-        <TodoList todos={getFilteredTodos()} deleteTodo={deleteTodo} toggleTodo={toggleTodo} ></TodoList>
+        <TodoList todos={getFilteredTodos()} deleteTodo={deleteTodo} toggleTodo={toggleTodo} updateTodo={updateTodo}></TodoList>
         <TodoFilter counts={counts} filter={filter} setFilter={setFilter}></TodoFilter>
       </Card>
     </div>
