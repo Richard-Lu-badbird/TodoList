@@ -26,7 +26,9 @@ import {
   useLayoutEffect,
   useCallback,
 } from "react";
+import { toast } from "sonner";
 
+type Picker = "start" | "end" | null;
 interface TodoDetailsDialogProps {
   detailOpen: boolean;
   detailTodo: Todo | null;
@@ -35,6 +37,7 @@ interface TodoDetailsDialogProps {
     text?: string;
     completed?: boolean;
     startTime?: Date | null;
+    endTime?: Date | null;
   }) => void;
   onOpenChange: (open: boolean) => void;
 }
@@ -46,13 +49,24 @@ function TodoDetailsDialog({
   onOpenChange,
 }: TodoDetailsDialogProps) {
   if (!detailTodo) return null;
+
   const formatDateTime = (value?: string | Date) => {
     if (!value) return "未设置";
     const date = typeof value === "string" ? new Date(value) : value;
     return isNaN(date.getTime()) ? "未设置" : date.toLocaleString();
   };
 
-  const [openDate, setOpenDate] = useState(false);
+  const [startDate, setStartDate] = useState<Date | undefined>(
+    detailTodo.startTime ? new Date(detailTodo.startTime) : undefined
+  );
+
+  const [endDate, setEndDate] = useState<Date | undefined>(
+    detailTodo.endTime ? new Date(detailTodo.endTime) : undefined
+  );
+
+  const [openPicker, setOpenPicker] = useState<Picker>(null);
+
+  // const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState<Date | undefined>(
     detailTodo.startTime ? new Date(detailTodo.startTime) : undefined
   );
@@ -66,9 +80,14 @@ function TodoDetailsDialog({
 
   useEffect(() => {
     setCompleted(detailTodo.completed);
-    setDate(detailTodo.startTime ? new Date(detailTodo.startTime) : undefined);
+    // setDate(detailTodo.startTime ? new Date(detailTodo.startTime) : undefined);
+    setStartDate(
+      detailTodo.startTime ? new Date(detailTodo.startTime) : undefined
+    );
+    setEndDate(detailTodo.endTime ? new Date(detailTodo.endTime) : undefined);
     setText(detailTodo.text);
-    setOpenDate(false);
+    // setOpenDate(false);
+    setOpenPicker(null);
   }, [detailTodo]);
 
   const syncWidth = useCallback(() => {
@@ -83,12 +102,25 @@ function TodoDetailsDialog({
   }, [text, detailOpen, syncWidth]);
 
   const handleSave = () => {
+    if (!startDate) {
+      toast.error("开始时间不能为空");
+      return;
+    }
+
+    // endDate 可以为空，不为空时才比较
+    if (endDate && startDate.getTime() > endDate.getTime()) {
+      toast.error("结束时间不能早于开始时间");
+      return;
+    }
+
     updateTodo({
       id: detailTodo.id,
       text,
       completed,
-      startTime: date ?? null,
+      startTime: startDate ?? null,
+      endTime: endDate ?? null,
     });
+
     onOpenChange(false);
   };
 
@@ -118,7 +150,7 @@ function TodoDetailsDialog({
                     // width: inputWidth ? `${inputWidth}px` : undefined,
                     maxWidth: "200px",
                     paddingRight: "0px",
-                    paddingLeft: "10px"
+                    paddingLeft: "10px",
                   }}
                   className="max-w-full border-transparent bg-transparent shadow-none px-0 text-xl font-semibold leading-tight text-right focus-visible:border-primary focus-visible:ring-1 focus-visible:ring-primary focus-visible:ring-offset-0"
                   placeholder="输入待办标题"
@@ -163,16 +195,24 @@ function TodoDetailsDialog({
           </div>
           <div className="flex justify-between">
             <Label>开始时间</Label>
-            <Popover open={openDate} onOpenChange={setOpenDate}>
+            <Popover
+              open={openPicker === "start"}
+              onOpenChange={(o) => setOpenPicker(o ? "start" : null)}
+            >
               <PopoverTrigger asChild>
                 <Button
                   variant="outline"
-                  id="date"
+                  id="startDate"
                   className="w-32 justify-between font-normal"
                 >
                   <ChevronDownIcon />
-
-                  {date ? date.toLocaleDateString() : "选择日期"}
+                  {startDate
+                    ? startDate.toLocaleDateString("zh-CN", {
+                        year: "numeric",
+                        month: "2-digit",
+                        day: "2-digit",
+                      })
+                    : "选择日期"}
                 </Button>
               </PopoverTrigger>
               <PopoverContent
@@ -181,11 +221,59 @@ function TodoDetailsDialog({
               >
                 <Calendar
                   mode="single"
-                  selected={date}
+                  selected={startDate}
+                  captionLayout="dropdown"
+                  startMonth={new Date(2024, 0)}
+                  endMonth={new Date(2050, 0)}
+                  onSelect={(date) => {
+                    // setDate(date);
+                    setStartDate(date || undefined);
+                    // setOpenDate(false);
+                    setOpenPicker(null);
+                  }}
+                />
+              </PopoverContent>
+            </Popover>
+          </div>
+          <div className="flex justify-between">
+            <Label>结束时间</Label>
+            <Popover
+              open={openPicker === "end"}
+              onOpenChange={(o) => setOpenPicker(o ? "end" : null)}
+            >
+              <PopoverTrigger asChild>
+                <Button
+                  variant="outline"
+                  id="endDate"
+                  className="w-32 justify-between font-normal"
+                >
+                  <ChevronDownIcon />
+
+                  {endDate
+                    ? endDate.toLocaleDateString("zh-CN", {
+                        year: "numeric",
+                        month: "2-digit",
+                        day: "2-digit",
+                      })
+                    : "选择日期"}
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent
+                className="w-auto overflow-hidden p-0"
+                align="start"
+              >
+                <Calendar
+                  mode="single"
+                  startMonth={new Date(2024, 0)}
+                  endMonth={new Date(2050, 0)}
+                  selected={endDate}
                   captionLayout="dropdown"
                   onSelect={(date) => {
-                    setDate(date);
-                    setOpenDate(false);
+                    // setDate(date);
+                    // setOpenDate(false);
+                    setEndDate(date);
+                    setOpenPicker(null);
+                    console.log(date);
                   }}
                 />
               </PopoverContent>

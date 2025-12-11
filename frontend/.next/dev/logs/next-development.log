@@ -1,38 +1,6 @@
-[00:00:00.788] Server  LOG      ✓ Ready in 597ms
-[00:00:12.108] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
-      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                  <DialogHeader>
-                  <div>
-                  <DialogFooter>
-                    <div data-slot="dialog-footer" className="flex flex-...">
-                      <DialogClose>
-                        <DialogClose data-slot="dialog-close">
-                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
->                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
-                              <Button variant="outline">
->                               <button
->                                 data-slot="button"
->                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
->                               >
-                      ...
-                  ...
-    ...
-
-[00:00:12.108] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[00:01:18.762] Server  LOG      ✓ Compiled in 46ms
-[00:03:30.061] Server  LOG      ✓ Compiled in 34ms
-[00:03:44.799] Server  LOG      ✓ Compiled in 32ms
-[03:53:04.286] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:01.544] Server  LOG      ✓ Ready in 1399ms
+[00:00:03.442] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.528] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -68,7 +36,19 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[03:53:05.423] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+[00:00:05.127] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
+[00:00:05.127] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
+[00:00:12.699] Browser LOG     测试
+[00:00:13.447] Browser LOG     测试
+[00:00:13.630] Browser LOG     测试
+[00:00:13.829] Browser LOG     测试
+[00:00:14.014] Browser LOG     测试
+[00:00:14.181] Browser LOG     测试
+[00:00:14.330] Browser LOG     测试
+[00:00:14.664] Browser LOG     测试
+[00:00:14.997] Browser LOG     测试
+[00:00:17.054] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
+[00:00:17.054] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
 This will cause a hydration error.%s <button> button 
 
   ...
@@ -96,506 +76,9 @@ This will cause a hydration error.%s <button> button
                   ...
     ...
 
-[03:53:05.423] Browser ERROR   <%s> cannot contain a nested %s.
+[00:00:17.054] Browser ERROR   <%s> cannot contain a nested %s.
 See this log for the ancestor stack trace. button <button>
-[03:53:18.090] Server  LOG     id is:  1765176261626
-[03:53:18.718] Server  LOG     id is:  1765176261626
-[03:53:19.115] Server  LOG     id is:  1765176261626
-[03:53:19.501] Server  LOG     id is:  1765176261626
-[03:53:19.951] Server  LOG     id is:  1765176261626
-[03:53:20.418] Server  LOG     id is:  1765176261626
-[03:53:20.716] Server  LOG     id is:  1765176261626
-[03:53:20.896] Server  LOG     id is:  1765176261626
-[03:53:21.080] Server  LOG     id is:  1765176261626
-[03:53:21.243] Server  LOG     id is:  1765176261626
-[03:53:21.412] Server  LOG     id is:  1765176261626
-[03:53:21.560] Server  LOG     id is:  1765176261626
-[03:53:21.695] Server  LOG     id is:  1765176261626
-[03:53:21.847] Server  LOG     id is:  1765176261626
-[03:53:21.995] Server  LOG     id is:  1765176261626
-[03:53:22.149] Server  LOG     id is:  1765176261626
-[03:53:22.311] Server  LOG     id is:  1765176261626
-[03:53:22.464] Server  LOG     id is:  1765176261626
-[03:53:22.629] Server  LOG     id is:  1765176261626
-[03:53:22.779] Server  LOG     id is:  1765176261626
-[03:53:23.059] Server  LOG     id is:  1765176261626
-[03:53:23.212] Server  LOG     id is:  1765176261626
-[03:53:23.362] Server  LOG     id is:  1765176261626
-[03:53:23.511] Server  LOG     id is:  1765176261626
-[03:53:23.661] Server  LOG     id is:  1765176261626
-[03:53:23.827] Server  LOG     id is:  1765176261626
-[03:53:23.977] Server  LOG     id is:  1765176261626
-[03:53:24.140] Server  LOG     id is:  1765176261626
-[03:53:24.292] Server  LOG     id is:  1765176261626
-[03:53:24.431] Server  LOG     id is:  1765176261626
-[03:53:24.578] Server  LOG     id is:  1765176261626
-[03:53:24.729] Server  LOG     id is:  1765176261626
-[03:53:24.913] Server  LOG     id is:  1765176261626
-[03:53:25.059] Server  LOG     id is:  1765176261626
-[03:53:25.229] Server  LOG     id is:  1765176261626
-[03:53:25.375] Server  LOG     id is:  1765176261626
-[03:53:25.880] Server  LOG     id is:  1765176261626
-[03:53:26.582] Server  LOG     id is:  1765176261626
-[03:53:26.781] Server  LOG     id is:  1765176261626
-[03:53:26.926] Server  LOG     id is:  1765176261626
-[03:53:27.093] Server  LOG     id is:  1765176261626
-[03:53:27.260] Server  LOG     id is:  1765176261626
-[03:53:27.411] Server  LOG     id is:  1765176261626
-[03:53:27.563] Server  LOG     id is:  1765176261626
-[03:53:27.728] Server  LOG     id is:  1765176261626
-[03:53:28.248] Server  LOG     id is:  1765176261626
-[03:53:28.728] Server  LOG     id is:  1765176261626
-[03:53:29.190] Server  LOG     id is:  1765176261626
-[03:53:29.547] Server  LOG     id is:  1765176261626
-[03:53:29.914] Server  LOG     id is:  1765176261626
-[03:53:30.314] Server  LOG     id is:  1765176261626
-[03:53:30.679] Server  LOG     id is:  1765176261626
-[03:53:31.091] Server  LOG     id is:  1765176261626
-[03:53:31.548] Server  LOG     id is:  1765176261626
-[03:53:31.913] Server  LOG     id is:  1765176261626
-[03:53:32.296] Server  LOG     id is:  1765176261626
-[03:53:32.762] Server  LOG     id is:  1765176261626
-[03:53:33.114] Server  LOG     id is:  1765176261626
-[03:53:33.579] Server  LOG     id is:  1765176261626
-[03:53:33.948] Server  LOG     id is:  1765176261626
-[03:56:53.738] Server  LOG      ✓ Compiled in 96ms
-[03:58:23.335] Server  LOG      ✓ Compiled in 25ms
-[03:58:48.172] Server  LOG      ✓ Compiled in 17ms
-[03:59:51.001] Server  LOG     id is:  1765176261626
-[04:00:23.033] Server  LOG      ✓ Compiled in 21ms
-[04:01:07.387] Server  LOG      ✓ Compiled in 15ms
-[04:01:43.143] Server  LOG      ✓ Compiled in 22ms
-[04:02:35.916] Server  LOG      ✓ Compiled in 23ms
-[04:02:45.372] Server  LOG      ✓ Compiled in 21ms
-[04:03:18.835] Server  LOG      ✓ Compiled in 14ms
-[04:03:33.540] Server  LOG      ✓ Compiled in 15ms
-[04:03:39.995] Server  LOG      ✓ Compiled in 12ms
-[04:03:49.136] Server  LOG      ✓ Compiled in 14ms
-[04:04:02.484] Server  LOG      ✓ Compiled in 43ms
-[04:04:40.742] Server  LOG      ✓ Compiled in 19ms
-[04:05:15.884] Server  LOG      ✓ Compiled in 27ms
-[04:05:20.819] Server  LOG      ✓ Compiled in 18ms
-[04:05:39.645] Server  LOG      ✓ Compiled in 18ms
-[04:06:28.042] Server  LOG      ✓ Compiled in 14ms
-[04:07:04.391] Server  LOG      ✓ Compiled in 15ms
-[04:07:31.563] Server  LOG      ✓ Compiled in 24ms
-[04:08:57.089] Server  LOG      ✓ Compiled in 29ms
-[04:08:59.374] Server  LOG      ✓ Compiled in 16ms
-[04:09:21.783] Server  LOG      ✓ Compiled in 14ms
-[04:12:21.128] Server  LOG      ✓ Compiled in 57ms
-[04:12:21.165] Server  LOG      ✓ Compiled in 34ms
-[04:12:40.187] Server  LOG      ✓ Compiled in 19ms
-[04:12:48.400] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[04:12:48.400] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
-      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                  <DialogHeader>
-                  <div>
-                  <DialogFooter>
-                    <div data-slot="dialog-footer" className="flex flex-...">
-                      <DialogClose>
-                        <DialogClose data-slot="dialog-close">
-                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
->                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
-                              <Button variant="outline">
->                               <button
->                                 data-slot="button"
->                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
->                               >
-                      ...
-                  ...
-    ...
-
-[04:12:48.400] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[04:13:20.461] Server  LOG      ✓ Compiled in 157ms
-[04:15:52.036] Server  LOG      ✓ Compiled in 74ms
-[04:20:18.759] Server  LOG      ✓ Compiled in 25ms
-[04:21:21.161] Server  LOG      ✓ Compiled in 23ms
-[04:23:12.586] Server  LOG      ✓ Compiled in 38ms
-[04:43:48.688] Server  LOG      ✓ Compiled in 120ms
-[04:45:15.586] Server  LOG      ✓ Compiled in 37ms
-[04:48:55.665] Server  LOG      ✓ Compiled in 36ms
-[04:53:12.734] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[04:53:12.734] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
-      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                  <DialogHeader>
-                  <div>
-                  <DialogFooter>
-                    <div data-slot="dialog-footer" className="flex flex-...">
-                      <DialogClose>
-                        <DialogClose data-slot="dialog-close">
-                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
->                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
-                              <Button variant="outline">
->                               <button
->                                 data-slot="button"
->                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
->                               >
-                      ...
-                  ...
-    ...
-
-[04:53:12.734] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[04:53:21.800] Server  LOG     id is:  undefined
-[04:53:21.910] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:22.598] Server  LOG     id is:  undefined
-[04:53:22.702] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:22.820] Server  LOG     id is:  undefined
-[04:53:22.925] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:22.976] Server  LOG     id is:  undefined
-[04:53:23.082] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:23.139] Server  LOG     id is:  undefined
-[04:53:23.242] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:23.307] Server  LOG     id is:  undefined
-[04:53:23.412] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:23.434] Server  LOG     id is:  undefined
-[04:53:23.540] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:23.579] Server  LOG     id is:  undefined
-[04:53:23.685] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:23.717] Server  LOG     id is:  undefined
-[04:53:23.822] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:23.867] Server  LOG     id is:  undefined
-[04:53:23.971] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:24.020] Server  LOG     id is:  undefined
-[04:53:24.122] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:24.179] Server  LOG     id is:  undefined
-[04:53:24.283] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:24.522] Server  LOG     id is:  undefined
-[04:53:24.626] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:24.676] Server  LOG     id is:  undefined
-[04:53:24.779] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:53:24.830] Server  LOG     id is:  undefined
-[04:53:24.937] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:54:59.300] Server  LOG      ✓ Compiled in 206ms
-[04:56:05.756] Server  LOG      ✓ Compiled in 30ms
-[04:57:25.111] Server  LOG      ✓ Compiled in 32ms
-[04:57:29.861] Server  LOG     id is:  undefined
-[04:57:29.975] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:58:25.526] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[04:58:25.526] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
-      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                  <DialogHeader>
-                  <div>
-                  <DialogFooter>
-                    <div data-slot="dialog-footer" className="flex flex-...">
-                      <DialogClose>
-                        <DialogClose data-slot="dialog-close">
-                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
->                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
-                              <Button variant="outline">
->                               <button
->                                 data-slot="button"
->                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
->                               >
-                      ...
-                  ...
-    ...
-
-[04:58:25.526] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[04:58:27.065] Server  LOG     id is:  undefined
-[04:58:27.169] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:58:29.146] Server  LOG     id is:  undefined
-[04:58:29.249] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:58:35.817] Server  LOG     id is:  undefined
-[04:58:35.921] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:58:39.262] Server  LOG     id is:  undefined
-[04:58:39.366] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:58:41.075] Server  LOG     id is:  undefined
-[04:58:41.178] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:58:43.372] Server  LOG     id is:  undefined
-[04:58:43.474] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[04:58:45.192] Server  LOG     id is:  undefined
-[04:58:45.295] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[05:29:49.616] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[05:29:49.616] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
-      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                  <DialogHeader>
-                  <div>
-                  <DialogFooter>
-                    <div data-slot="dialog-footer" className="flex flex-...">
-                      <DialogClose>
-                        <DialogClose data-slot="dialog-close">
-                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
->                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
-                              <Button variant="outline">
->                               <button
->                                 data-slot="button"
->                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
->                               >
-                      ...
-                  ...
-    ...
-
-[05:29:49.616] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[05:29:54.353] Server  LOG     id is:  undefined
-[05:29:54.458] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[05:29:59.410] Server  LOG     id is:  undefined
-[05:29:59.514] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[23:24:38.607] Browser LOG     测试
-[23:24:38.609] Browser LOG     测试
-[23:24:38.771] Browser LOG     测试
-[23:24:38.938] Browser LOG     测试
-[23:24:39.069] Browser LOG     测试
-[23:24:39.236] Browser LOG     测试
-[23:24:39.370] Browser LOG     测试
-[23:24:39.538] Browser LOG     测试
-[23:24:40.093] Browser LOG     测试
-[23:24:43.155] Browser LOG     测试
-[23:24:43.619] Browser LOG     测试
-[23:24:43.790] Browser LOG     测试
-[23:24:43.952] Browser LOG     测试
-[23:24:44.104] Browser LOG     测试
-[23:24:44.272] Browser LOG     测试
-[23:24:44.436] Browser LOG     测试
-[23:24:44.690] Browser LOG     测试
-[23:25:01.793] Server  LOG     id is:  undefined
-[23:25:01.904] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[23:27:58.644] Server  LOG      ✓ Compiled in 79ms
-[23:28:45.310] Server  LOG      ✓ Compiled in 38ms
-[23:28:45.399] Browser LOG     undefined
-[23:28:45.399] Browser LOG     undefined
-[23:28:45.402] Browser LOG     "2025-12-08T06:44:21.626Z"
-[23:28:45.402] Browser LOG     [2;38;2;124;124;124m%s[0m "2025-12-08T06:44:21.626Z"
-[23:28:55.301] Browser LOG     undefined
-[23:28:55.302] Browser LOG     undefined
-[23:28:56.437] Browser LOG     undefined
-[23:28:56.437] Browser LOG     undefined
-[23:28:57.950] Browser LOG     undefined
-[23:28:57.950] Browser LOG     undefined
-[23:28:57.950] Browser LOG     undefined
-[23:28:57.950] Browser LOG     undefined
-[23:28:58.752] Browser LOG     undefined
-[23:28:58.752] Browser LOG     undefined
-[23:28:59.759] Browser LOG     undefined
-[23:28:59.759] Browser LOG     undefined
-[23:28:59.759] Browser LOG     undefined
-[23:28:59.759] Browser LOG     undefined
-[23:37:07.397] Browser LOG     undefined
-[23:37:07.398] Browser LOG     undefined
-[23:37:08.475] Browser LOG     undefined
-[23:37:08.475] Browser LOG     undefined
-[23:37:08.475] Browser LOG     undefined
-[23:37:08.475] Browser LOG     undefined
-[23:37:09.455] Browser LOG     "2025-12-29T16:00:00.000Z"
-[23:37:09.455] Browser LOG     "2025-12-29T16:00:00.000Z"
-[23:38:25.735] Server  LOG      ✓ Compiled in 88ms
-[23:38:25.844] Browser ERROR   ./components/TodoDetailsDialog.tsx:59:58
-Parsing ecmascript source code failed
-  57 |
-  58 |   const handleSave = () => {
-> 59 |     updateTodo(detailTodo.id, detailTodo.text, completed,\);
-     |                                                          ^
-  60 |     onOpenChange(false)
-  61 |   };
-  62 |   {console.log(date)}
-
-Expected unicode escape
-
-Import traces:
-  Client Component Browser:
-    ./components/TodoDetailsDialog.tsx [Client Component Browser]
-    ./components/TodoList.tsx [Client Component Browser]
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./components/TodoDetailsDialog.tsx [Client Component SSR]
-    ./components/TodoList.tsx [Client Component SSR]
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[23:38:25.906] Browser ERROR   ./components/TodoDetailsDialog.tsx:59:58
-Parsing ecmascript source code failed
-  57 |
-  58 |   const handleSave = () => {
-> 59 |     updateTodo(detailTodo.id, detailTodo.text, completed,\);
-     |                                                          ^
-  60 |     onOpenChange(false)
-  61 |   };
-  62 |   {console.log(date)}
-
-Expected unicode escape
-
-Import traces:
-  Client Component Browser:
-    ./components/TodoDetailsDialog.tsx [Client Component Browser]
-    ./components/TodoList.tsx [Client Component Browser]
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./components/TodoDetailsDialog.tsx [Client Component SSR]
-    ./components/TodoList.tsx [Client Component SSR]
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[23:38:51.846] Browser ERROR   ./components/TodoDetailsDialog.tsx:59:58
-Parsing ecmascript source code failed
-  57 |
-  58 |   const handleSave = () => {
-> 59 |     updateTodo(detailTodo.id, detailTodo.text, completed,\);
-     |                                                          ^
-  60 |     onOpenChange(false)
-  61 |   };
-  62 |   {console.log(date)}
-
-Expected unicode escape
-
-Import traces:
-  Client Component Browser:
-    ./components/TodoDetailsDialog.tsx [Client Component Browser]
-    ./components/TodoList.tsx [Client Component Browser]
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./components/TodoDetailsDialog.tsx [Client Component SSR]
-    ./components/TodoList.tsx [Client Component SSR]
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[23:38:51.847] Browser ERROR   ./components/TodoDetailsDialog.tsx:59:58
-Parsing ecmascript source code failed
-  57 |
-  58 |   const handleSave = () => {
-> 59 |     updateTodo(detailTodo.id, detailTodo.text, completed,\);
-     |                                                          ^
-  60 |     onOpenChange(false)
-  61 |   };
-  62 |   {console.log(date)}
-
-Expected unicode escape
-
-Import traces:
-  Client Component Browser:
-    ./components/TodoDetailsDialog.tsx [Client Component Browser]
-    ./components/TodoList.tsx [Client Component Browser]
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./components/TodoDetailsDialog.tsx [Client Component SSR]
-    ./components/TodoList.tsx [Client Component SSR]
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[23:39:16.336] Server  LOG      ✓ Compiled in 51ms
-[23:39:16.459] Browser LOG     "2025-12-08T06:44:21.626Z"
-[23:39:16.460] Browser LOG     [2;38;2;124;124;124m%s[0m "2025-12-08T06:44:21.626Z"
-[23:39:16.643] Browser LOG     "2025-12-29T16:00:00.000Z"
-[23:39:16.643] Browser LOG     "2025-12-29T16:00:00.000Z"
-[23:39:16.830] Browser LOG     "2025-12-29T16:00:00.000Z"
-[23:39:16.830] Browser LOG     "2025-12-29T16:00:00.000Z"
-[23:39:16.831] Browser LOG     "2025-12-08T06:44:21.626Z"
-[23:39:16.831] Browser LOG     [2;38;2;124;124;124m%s[0m "2025-12-08T06:44:21.626Z"
-[23:39:59.550] Server  LOG      ✓ Compiled in 34ms
-[23:39:59.629] Browser LOG     "2025-12-08T06:44:21.626Z"
-[23:39:59.629] Browser LOG     [2;38;2;124;124;124m%s[0m "2025-12-08T06:44:21.626Z"
-[23:39:59.636] Browser LOG     "2025-12-29T16:00:00.000Z"
-[23:39:59.636] Browser LOG     "2025-12-29T16:00:00.000Z"
-[23:40:25.491] Browser LOG     "2025-12-29T16:00:00.000Z"
-[23:40:25.491] Browser LOG     "2025-12-29T16:00:00.000Z"
-[23:40:26.403] Browser LOG     "2025-12-28T16:00:00.000Z"
-[23:40:26.403] Browser LOG     "2025-12-28T16:00:00.000Z"
-[23:40:27.037] Browser LOG     "2025-12-28T16:00:00.000Z"
-[23:40:27.037] Browser LOG     "2025-12-28T16:00:00.000Z"
-[23:40:28.479] Server  LOG     id is:  undefined
-[23:40:28.482] Browser LOG     "2025-12-28T16:00:00.000Z"
-[23:40:28.482] Browser LOG     "2025-12-28T16:00:00.000Z"
-[23:40:28.591] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[23:40:42.776] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
-[23:40:42.776] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
-[23:40:48.369] Browser LOG     "2025-12-10T02:31:40.382Z"
-[23:40:48.369] Browser LOG     "2025-12-10T02:31:40.382Z"
-[23:40:48.369] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[23:40:48.369] Browser LOG     "2025-12-10T02:31:40.382Z"
-[23:40:48.369] Browser LOG     "2025-12-10T02:31:40.382Z"
-[23:40:48.369] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
-      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                  <DialogHeader>
-                  <div>
-                  <DialogFooter>
-                    <div data-slot="dialog-footer" className="flex flex-...">
-                      <DialogClose>
-                        <DialogClose data-slot="dialog-close">
-                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
->                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
-                              <Button variant="outline">
->                               <button
->                                 data-slot="button"
->                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
->                               >
-                      ...
-                  ...
-    ...
-
-[23:40:48.369] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[23:41:22.854] Browser LOG     "2025-12-10T02:31:40.382Z"
-[23:41:22.856] Browser LOG     "2025-12-10T02:31:40.382Z"
-[23:41:23.171] Browser LOG     "2025-12-10T02:31:40.382Z"
-[23:41:23.171] Browser LOG     "2025-12-10T02:31:40.382Z"
-[23:41:23.840] Browser LOG     "2025-12-10T02:31:40.382Z"
-[23:41:23.840] Browser LOG     "2025-12-10T02:31:40.382Z"
-[23:41:24.572] Browser LOG     "2025-12-30T16:00:00.000Z"
-[23:41:24.572] Browser LOG     "2025-12-30T16:00:00.000Z"
-[23:41:25.877] Server  LOG     id is:  undefined
-[23:41:25.982] Browser LOG     "2025-12-30T16:00:00.000Z"
-[23:41:25.982] Browser LOG     "2025-12-30T16:00:00.000Z"
-[23:41:25.982] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[23:42:26.996] Server  LOG      ✓ Compiled in 51ms
-[23:43:21.917] Server  LOG      ✓ Compiled in 49ms
-[23:43:21.977] Browser ERROR   uncaughtError: ReferenceError: handleCancle is not defined
-[23:43:26.041] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: handleCancle
-[23:43:34.652] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[23:43:34.662] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[23:43:34.735] Server  LOG      ✓ Compiled in 35ms
-[23:43:34.962] Browser ERROR   {}
-[23:43:35.783] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:24.241] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -631,52 +114,8 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[23:43:38.601] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[23:43:38.601] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
-      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                  <DialogHeader>
-                  <div>
-                  <DialogFooter>
-                    <div data-slot="dialog-footer" className="flex flex-...">
-                      <DialogClose>
-                        <DialogClose data-slot="dialog-close">
-                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
->                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
-                              <Button variant="outline" onClick={function handleCancle}>
->                               <button
->                                 data-slot="button"
->                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
->                                 onClick={function handleCancle}
->                               >
-                      ...
-                  ...
-    ...
-
-[23:43:38.601] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[23:43:40.969] Browser LOG     1765333900382
-[23:43:43.802] Browser LOG     1765333900382
-[23:44:11.935] Server  LOG      ✓ Compiled in 68ms
-[23:44:15.615] Server  LOG     id is:  undefined
-[23:44:15.719] Browser LOG     {"completed":false,"id":1765333900382,"startTime":"2025-12-10T02:31:40.382Z","text":"3"} false "2025-12-10T02:31:40.382Z"
-[23:44:15.719] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[23:44:44.618] Server  LOG      ✓ Compiled in 77ms
-[23:45:36.311] Server  LOG      ✓ Compiled in 39ms
-[23:45:41.226] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: handleCancle
-[23:45:47.441] Browser ERROR   uncaughtError: ReferenceError: Can't find variable: handleCancle
-[23:45:58.126] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[23:45:58.142] Server  LOG      ✓ Compiled in 25ms
-[23:46:00.634] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[23:46:00.634] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+[00:00:25.979] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
+[00:00:25.979] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
 This will cause a hydration error.%s <button> button 
 
   ...
@@ -704,141 +143,589 @@ This will cause a hydration error.%s <button> button
                   ...
     ...
 
-[23:46:00.634] Browser ERROR   <%s> cannot contain a nested %s.
+[00:00:25.980] Browser ERROR   <%s> cannot contain a nested %s.
 See this log for the ancestor stack trace. button <button>
-[23:46:04.431] Server  LOG     id is:  undefined
-[23:46:04.556] Browser LOG     payload is  1765333900382
-[23:46:04.556] Browser LOG     {"completed":false,"id":1765333900382,"startTime":"2025-12-10T02:31:40.382Z","text":"3"} false "2025-12-10T02:31:40.382Z"
-[23:46:04.556] Browser ERROR   unhandledRejection: Error: 更新待办失败
-[24:02:23.209] Server  LOG      ✓ Compiled in 44ms
-[24:02:23.341] Browser ERROR   ./components/TodoDetailsDialog.tsx:65:17
-Parsing ecmascript source code failed
-  63 |   const handleSave = () => {
-  64 |     updateTodo({
-> 65 |       detailTodo.id,
-     |                 ^
-  66 |       detailTodo.text,
-  67 |       completed, 
-  68 |       date});
+[00:00:30.996] Server  LOG     id is:  1765352709871
+[00:00:31.081] Browser LOG     payload is  {"completed":true,"endTime":null,"id":1765352709871,"startTime":"2025-12-10T07:45:09.871Z","text":"测试一下吗"}
+[00:00:32.730] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-Expected a semicolon
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-Import traces:
-  Client Component Browser:
-    ./components/TodoDetailsDialog.tsx [Client Component Browser]
-    ./components/TodoList.tsx [Client Component Browser]
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-  Client Component SSR:
-    ./components/TodoDetailsDialog.tsx [Client Component SSR]
-    ./components/TodoList.tsx [Client Component SSR]
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[24:02:23.511] Browser ERROR   ./components/TodoDetailsDialog.tsx:65:17
-Parsing ecmascript source code failed
-  63 |   const handleSave = () => {
-  64 |     updateTodo({
-> 65 |       detailTodo.id,
-     |                 ^
-  66 |       detailTodo.text,
-  67 |       completed, 
-  68 |       date});
+%s%s https://react.dev/link/hydration-mismatch 
 
-Expected a semicolon
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
 
-Import traces:
-  Client Component Browser:
-    ./components/TodoDetailsDialog.tsx [Client Component Browser]
-    ./components/TodoList.tsx [Client Component Browser]
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
+[00:00:33.382] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-  Client Component SSR:
-    ./components/TodoDetailsDialog.tsx [Client Component SSR]
-    ./components/TodoList.tsx [Client Component SSR]
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[24:02:53.315] Server  LOG      ✓ Compiled in 48ms
-[24:04:34.697] Server  LOG     id is:  1765333900382
-[24:04:34.725] Browser LOG     payload is  {"completed":false,"id":1765333900382,"startTime":"2025-12-10T02:31:40.382Z","text":"3"}
-[24:04:34.725] Browser LOG     {"completed":false,"id":1765333900382,"startTime":"2025-12-10T02:31:40.382Z","text":"3"} false "2025-12-10T02:31:40.382Z"
-[24:04:50.235] Server  LOG     id is:  1765333900382
-[24:04:50.272] Browser LOG     payload is  {"completed":true,"id":1765333900382,"startTime":"2025-12-10T02:31:40.382Z","text":"3"}
-[24:04:50.272] Browser LOG     {"completed":false,"id":1765333900382,"startTime":"2025-12-10T02:31:40.382Z","text":"3"} true "2025-12-10T02:31:40.382Z"
-[24:04:56.204] Server  LOG     id is:  1765333900382
-[24:04:56.258] Browser LOG     payload is  {"completed":true,"id":1765333900382,"startTime":"2025-12-30T16:00:00.000Z","text":"3"}
-[24:04:56.258] Browser LOG     {"completed":true,"id":1765333900382,"startTime":"2025-12-10T02:31:40.382Z","text":"3"} true "2025-12-30T16:00:00.000Z"
-[24:05:01.526] Server  LOG     id is:  1764902989986
-[24:05:01.603] Browser LOG     payload is  {"completed":true,"id":1764902989986,"startTime":"2025-12-29T16:00:00.000Z","text":"2"}
-[24:05:01.603] Browser LOG     {"completed":false,"id":1764902989986,"text":"2"} true "2025-12-29T16:00:00.000Z"
-[24:05:49.066] Server  LOG     id is:  1765333900382
-[24:05:49.121] Browser LOG     payload is  {"completed":true,"id":1765333900382,"startTime":"2025-12-30T16:00:00.000Z","text":"3"}
-[24:05:49.121] Browser LOG     {"completed":true,"id":1765333900382,"startTime":"2025-12-30T16:00:00.000Z","text":"3"} true "2025-12-30T16:00:00.000Z"
-[24:05:55.216] Server  LOG     id is:  1765333900382
-[24:05:55.303] Browser LOG     payload is  {"completed":true,"id":1765333900382,"startTime":"2025-12-30T16:00:00.000Z","text":"3"}
-[24:05:55.303] Browser LOG     {"completed":true,"id":1765333900382,"startTime":"2025-12-30T16:00:00.000Z","text":"3"} true "2025-12-30T16:00:00.000Z"
-[24:05:56.736] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
-[24:05:56.736] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
-[24:06:02.437] Server  LOG      ✓ Compiled in 33ms
-[24:06:31.602] Server  LOG      ✓ Compiled in 22ms
-[24:06:46.812] Server  LOG      ✓ Compiled in 24ms
-[24:07:33.846] Server  LOG      ✓ Compiled in 39ms
-[24:08:11.000] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[24:08:18.960] Server  LOG     id is:  1764902989986
-[24:08:19.022] Browser LOG     payload is  {"completed":true,"id":1764902989986,"startTime":"2025-12-29T16:00:00.000Z","text":"这是一个测试"}
-[24:08:30.914] Server  LOG     id is:  1764902989986
-[24:08:30.986] Browser LOG     payload is  {"completed":true,"id":1764902989986,"startTime":"2025-12-29T16:00:00.000Z","text":"这是一个测试项"}
-[24:08:54.010] Server  LOG      ✓ Compiled in 35ms
-[25:36:40.891] Server  LOG      ✓ Compiled in 191ms
-[27:18:23.697] Server  LOG     id is:  1765333900382
-[27:18:23.707] Browser LOG     payload is  {"completed":true,"id":1765333900382,"startTime":"2025-12-30T16:00:00.000Z","text":"尼玛"}
-[27:19:07.509] Server  LOG      ✓ Compiled in 74ms
-[27:19:18.023] Server  LOG     id is:  1765333900382
-[27:19:18.075] Browser LOG     payload is  {"completed":true,"id":1765333900382,"startTime":"2025-12-30T16:00:00.000Z","text":"去接孩子上学"}
-[27:19:32.884] Server  LOG     id is:  1765333900382
-[27:19:32.909] Browser LOG     payload is  {"completed":true,"id":1765333900382,"startTime":"2025-12-29T16:00:00.000Z","text":"去接孩子上学"}
-[27:19:39.820] Server  LOG     id is:  1764902989984
-[27:19:39.905] Browser LOG     payload is  {"completed":true,"id":1764902989984,"startTime":"2025-12-29T16:00:00.000Z","text":"222"}
-[27:20:12.411] Server  LOG      ✓ Compiled in 49ms
-[27:21:01.494] Server  LOG      ✓ Compiled in 37ms
-[27:21:08.460] Server  LOG      ✓ Compiled in 95ms
-[27:21:38.541] Server  LOG      ✓ Compiled in 33ms
-[27:21:46.352] Server  LOG      ✓ Compiled in 13ms
-[27:21:54.173] Server  LOG      ✓ Compiled in 16ms
-[27:22:00.372] Server  LOG      ✓ Compiled in 20ms
-[27:22:04.324] Server  LOG      ✓ Compiled in 42ms
-[27:22:13.007] Server  LOG     id is:  1765333900382
-[27:22:13.074] Browser LOG     payload is  {"completed":true,"id":1765333900382,"startTime":"2025-12-29T16:00:00.000Z","text":"去接孩子2"}
-[27:22:29.318] Server  LOG      ✓ Compiled in 60ms
-[27:22:39.608] Server  LOG      ✓ Compiled in 17ms
-[27:23:03.990] Server  LOG      ✓ Compiled in 19ms
-[27:23:19.194] Server  LOG      ✓ Compiled in 17ms
-[27:23:38.826] Server  LOG      ✓ Compiled in 45ms
-[27:23:52.627] Server  LOG      ✓ Compiled in 93ms
-[27:23:58.789] Server  LOG      ✓ Compiled in 21ms
-[27:24:19.370] Server  LOG      ✓ Compiled in 38ms
-[27:24:31.457] Server  LOG      ✓ Compiled in 16ms
-[27:27:36.300] Server  LOG      ✓ Compiled in 26ms
-[27:27:40.637] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
-[27:27:40.637] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
-[27:27:51.423] Server  LOG      ✓ Compiled in 30ms
-[27:28:22.427] Server  LOG      ✓ Compiled in 43ms
-[27:28:32.944] Server  LOG      ✓ Compiled in 20ms
-[27:28:51.234] Server  LOG      ✓ Compiled in 50ms
-[27:28:58.089] Server  LOG      ✓ Compiled in 32ms
-[27:29:07.097] Server  LOG      ✓ Compiled in 30ms
-[27:29:21.580] Server  LOG      ✓ Compiled in 19ms
-[27:38:09.363] Server  LOG      ✓ Compiled in 67ms
-[27:38:38.591] Server  LOG      ✓ Compiled in 19ms
-[27:39:54.365] Server  LOG      ✓ Compiled in 49ms
-[27:40:00.605] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[27:40:00.605] Browser ERROR   uncaughtError: Error: React.Children.only expected to receive a single React element child.
-[27:40:22.438] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[27:40:22.446] Server  LOG      ✓ Compiled in 36ms
-[27:40:22.653] Browser ERROR   {}
-[27:40:25.284] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[27:40:25.284] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:33.631] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:34.295] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:34.601] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:34.899] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:35.577] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:35.748] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:35.997] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:36.202] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:36.441] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:36.710] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:37.021] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:37.223] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:37.457] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:37.749] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           data-atm-ext-installed="1.29.12"
+                          >
+                  ...
+
+[00:00:40.880] Browser LOG     测试
+[00:00:45.635] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
+[00:00:45.635] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
 This will cause a hydration error.%s <button> button 
 
   ...
@@ -866,222 +753,10 @@ This will cause a hydration error.%s <button> button
                   ...
     ...
 
-[27:40:25.285] Browser ERROR   <%s> cannot contain a nested %s.
+[00:00:45.635] Browser ERROR   <%s> cannot contain a nested %s.
 See this log for the ancestor stack trace. button <button>
-[27:48:53.484] Server  LOG      ✓ Compiled in 132ms
-[27:49:24.282] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[27:49:24.282] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
-      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                  <DialogHeader>
-                  <div>
-                  <DialogFooter>
-                    <div data-slot="dialog-footer" className="flex flex-...">
-                      <DialogClose>
-                        <DialogClose data-slot="dialog-close">
-                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
->                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
-                              <Button variant="outline">
->                               <button
->                                 data-slot="button"
->                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
->                               >
-                      ...
-                  ...
-    ...
-
-[27:49:24.282] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[27:50:45.576] Server  LOG      ✓ Compiled in 61ms
-[27:51:13.968] Server  LOG      ✓ Compiled in 24ms
-[27:53:57.760] Server  LOG      ✓ Compiled in 251ms
-[27:55:19.151] Server  LOG      ✓ Compiled in 70ms
-[27:58:54.116] Server  LOG      ✓ Compiled in 77ms
-[27:59:46.419] Server  LOG     id is:  1764902989979
-[27:59:46.462] Browser LOG     payload is  {"completed":true,"id":1764902989979,"startTime":"2025-12-28T16:00:00.000Z","text":"333"}
-[28:01:08.551] Server  LOG      ✓ Compiled in 71ms
-[28:02:12.849] Server  LOG      ✓ Compiled in 50ms
-[28:03:21.538] Server  LOG      ✓ Compiled in 77ms
-[28:04:41.935] Server  LOG      ✓ Compiled in 50ms
-[28:04:50.775] Server  LOG     id is:  1764902989981
-[28:04:50.794] Browser LOG     payload is  {"completed":false,"id":1764902989981,"startTime":null,"text":"你好"}
-[28:05:16.439] Server  LOG      ✓ Compiled in 42ms
-[28:05:43.602] Server  LOG      ✓ Compiled in 28ms
-[28:05:52.015] Server  LOG      ✓ Compiled in 37ms
-[28:05:58.266] Server  LOG      ✓ Compiled in 17ms
-[28:06:27.159] Server  LOG      ✓ Compiled in 43ms
-[28:06:37.666] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
-[28:06:37.666] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
-[28:06:39.963] Server  LOG      ✓ Compiled in 18ms
-[28:06:47.224] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[28:06:47.224] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
-      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                  <DialogHeader>
-                  <div>
-                  <DialogFooter>
-                    <div data-slot="dialog-footer" className="flex flex-...">
-                      <DialogClose>
-                        <DialogClose data-slot="dialog-close">
-                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
->                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
-                              <Button variant="outline">
->                               <button
->                                 data-slot="button"
->                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
->                               >
-                      ...
-                  ...
-    ...
-
-[28:06:47.224] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[28:07:10.801] Server  LOG      ✓ Compiled in 39ms
-[28:07:56.907] Server  LOG      ✓ Compiled in 41ms
-[28:08:05.111] Server  LOG     id is:  1764902989985
-[28:08:05.125] Browser LOG     payload is  {"completed":false,"id":1764902989985,"startTime":null,"text":"sdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsd"}
-[28:08:12.703] Server  LOG     id is:  1764902989984
-[28:08:12.790] Browser LOG     payload is  {"completed":true,"id":1764902989984,"startTime":"2025-12-29T16:00:00.000Z","text":"222"}
-[28:09:20.792] Server  LOG     id is:  1764902957907
-[28:09:20.860] Browser LOG     payload is  {"completed":true,"id":1764902957907,"startTime":"2025-11-30T16:00:00.000Z","text":"5555"}
-[28:10:50.097] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
-[28:10:50.097] Browser ERROR   unhandledRejection: {"status":-999,"name":"fetchError"}
-[28:10:55.577] Server  LOG      ✓ Compiled in 42ms
-[28:11:12.553] Server  LOG      ✓ Compiled in 18ms
-[28:11:12.657] Browser ERROR   uncaughtError: Error: React.Children.only expected to receive a single React element child.
-[28:12:30.259] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[28:12:30.271] Server  LOG      ✓ Compiled in 27ms
-[28:12:30.534] Browser ERROR   {}
-[28:12:36.843] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[28:12:36.844] Browser ERROR   uncaughtError: Error: React.Children.only expected to receive a single React element child.
-[28:12:44.727] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[28:12:44.730] Server  LOG      ✓ Compiled in 46ms
-[28:12:47.538] Browser ERROR   Internal React error: Expected static flag was missing. Please notify the React team.
-[28:12:47.538] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
-      <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-        <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-          <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-            <DismissableLayer role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-              <Primitive.div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                <div role="dialog" id="radix-_r_0_" aria-describedby="radix-_r_2_" aria-labelledby="radix-_r_1_" ...>
-                  <DialogHeader>
-                  <div>
-                  <DialogFooter>
-                    <div data-slot="dialog-footer" className="flex flex-...">
-                      <DialogClose>
-                        <DialogClose data-slot="dialog-close">
-                          <Primitive.button type="button" data-slot="dialog-close" ref={null} ...>
->                           <button type="button" data-slot="dialog-close" onClick={function handleEvent} ref={null}>
-                              <Button variant="outline">
->                               <button
->                                 data-slot="button"
->                                 className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded..."}
->                               >
-                      ...
-                  ...
-    ...
-
-[28:12:47.538] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[28:13:00.185] Server  LOG      ✓ Compiled in 27ms
-[28:13:03.546] Server  LOG     id is:  1765333900382
-[28:13:03.625] Browser LOG     payload is  {"completed":true,"id":1765333900382,"startTime":"2025-12-29T16:00:00.000Z","text":"去接孩子2"}
-[28:34:04.440] Server  LOG      ✓ Compiled in 91ms
-[28:34:07.286] Server  LOG      ✓ Compiled in 18ms
-[28:35:18.357] Server  LOG      ✓ Compiled in 37ms
-[28:35:24.238] Server  LOG      ✓ Compiled in 19ms
-[28:35:29.725] Server  LOG      ✓ Compiled in 22ms
-[28:35:34.162] Server  LOG      ✓ Compiled in 17ms
-[28:35:37.264] Browser LOG     payload is  {"completed":true,"id":1765333900382,"startTime":"2025-12-29T16:00:00.000Z","text":"去接孩子2"}
-[28:35:37.286] Server  LOG     id is:  1765333900382
-[28:35:48.207] Server  LOG     id is:  1764902989980
-[28:35:48.290] Browser LOG     payload is  {"completed":true,"id":1764902989980,"startTime":null,"text":"2"}
-[28:38:04.827] Browser LOG     测试
-[28:38:05.012] Browser LOG     测试
-[28:38:05.298] Browser LOG     测试
-[28:38:05.508] Browser LOG     测试
-[28:38:05.913] Browser LOG     测试
-[28:38:06.113] Browser LOG     测试
-[28:38:06.294] Browser LOG     测试
-[28:38:06.468] Browser LOG     测试
-[28:38:06.628] Browser LOG     测试
-[28:38:06.829] Browser LOG     测试
-[28:38:07.013] Browser LOG     测试
-[28:38:07.186] Browser LOG     测试
-[28:38:07.385] Browser LOG     测试
-[28:38:45.708] Server  LOG     id is:  1765352716145
-[28:38:45.792] Browser LOG     payload is  {"completed":true,"id":1765352716145}
-[28:38:46.090] Server  LOG     id is:  1765352716145
-[28:38:46.174] Browser LOG     payload is  {"completed":false,"id":1765352716145}
-[28:38:46.517] Server  LOG     id is:  1765352716145
-[28:38:46.609] Browser LOG     payload is  {"completed":true,"id":1765352716145}
-[28:38:46.664] Server  LOG     id is:  1765352716145
-[28:38:46.757] Browser LOG     payload is  {"completed":false,"id":1765352716145}
-[28:38:46.794] Server  LOG     id is:  1765352716145
-[28:38:46.890] Browser LOG     payload is  {"completed":true,"id":1765352716145}
-[28:38:46.963] Server  LOG     id is:  1765352716145
-[28:38:47.057] Browser LOG     payload is  {"completed":false,"id":1765352716145}
-[28:38:47.100] Server  LOG     id is:  1765352716145
-[28:38:47.191] Browser LOG     payload is  {"completed":true,"id":1765352716145}
-[28:38:47.233] Server  LOG     id is:  1765352716145
-[28:38:47.324] Browser LOG     payload is  {"completed":false,"id":1765352716145}
-[28:38:47.417] Server  LOG     id is:  1765352716145
-[28:38:47.507] Browser LOG     payload is  {"completed":true,"id":1765352716145}
-[28:38:47.550] Server  LOG     id is:  1765352716145
-[28:38:47.640] Browser LOG     payload is  {"completed":false,"id":1765352716145}
-[28:38:47.739] Server  LOG     id is:  1765352716145
-[28:38:47.827] Browser LOG     payload is  {"completed":true,"id":1765352716145}
-[28:38:48.170] Server  LOG     id is:  1765352716145
-[28:38:48.260] Browser LOG     payload is  {"completed":false,"id":1765352716145}
-[28:38:48.337] Server  LOG     id is:  1765352716145
-[28:38:48.427] Browser LOG     payload is  {"completed":true,"id":1765352716145}
-[28:38:48.756] Server  LOG     id is:  1765352716145
-[28:38:48.841] Browser LOG     payload is  {"completed":false,"id":1765352716145}
-[28:39:06.136] Server  LOG     id is:  1765352716145
-[28:39:06.222] Browser LOG     payload is  {"completed":true,"id":1765352716145,"startTime":"2025-12-10T07:45:16.145Z","text":"？"}
-[28:39:29.926] Server  LOG     id is:  1765352709871
-[28:39:30.008] Browser LOG     payload is  {"completed":true,"id":1765352709871}
-[28:39:30.355] Server  LOG     id is:  1765352709871
-[28:39:30.441] Browser LOG     payload is  {"completed":false,"id":1765352709871}
-[28:39:30.720] Server  LOG     id is:  1765352709871
-[28:39:30.808] Browser LOG     payload is  {"completed":true,"id":1765352709871}
-[28:39:30.900] Server  LOG     id is:  1765352709871
-[28:39:30.990] Browser LOG     payload is  {"completed":false,"id":1765352709871}
-[28:39:31.061] Server  LOG     id is:  1765352709871
-[28:39:31.156] Browser LOG     payload is  {"completed":true,"id":1765352709871}
-[28:39:31.217] Server  LOG     id is:  1765352709871
-[28:39:31.309] Browser LOG     payload is  {"completed":false,"id":1765352709871}
-[28:39:31.385] Server  LOG     id is:  1765352709871
-[28:39:31.474] Browser LOG     payload is  {"completed":true,"id":1765352709871}
-[28:39:31.569] Server  LOG     id is:  1765352709871
-[28:39:31.658] Browser LOG     payload is  {"completed":false,"id":1765352709871}
-[28:39:31.954] Server  LOG     id is:  1765352709871
-[28:39:32.040] Browser LOG     payload is  {"completed":true,"id":1765352709871}
-[28:39:32.441] Server  LOG     id is:  1765352709871
-[28:39:32.524] Browser LOG     payload is  {"completed":false,"id":1765352709871}
-[28:39:32.638] Server  LOG     id is:  1765352709871
-[28:39:32.724] Browser LOG     payload is  {"completed":true,"id":1765352709871}
-[28:39:32.782] Server  LOG     id is:  1765352709871
-[28:39:32.875] Browser LOG     payload is  {"completed":false,"id":1765352709871}
-[28:39:33.105] Server  LOG     id is:  1765352709871
-[28:39:33.192] Browser LOG     payload is  {"completed":true,"id":1765352709871}
+[00:01:06.713] Browser LOG     "2025-12-30T16:00:00.000Z"
+[00:01:07.470] Server  LOG     id is:  1765333900382
+[00:01:07.546] Browser LOG     payload is  {"completed":false,"endTime":"2025-12-30T16:00:00.000Z","id":1765333900382,"startTime":"2025-12-16T16:00:00.000Z","text":"???"}
+[00:01:23.706] Server  LOG     id is:  1765352709871
+[00:01:23.768] Browser LOG     payload is  {"completed":true,"endTime":null,"id":1765352709871,"startTime":"2025-12-10T07:45:09.871Z","text":"测试一下吗"}

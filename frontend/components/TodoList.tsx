@@ -14,6 +14,7 @@ interface TodoListProps {
     text?: string;
     completed?: boolean;
     startTime?: Date | null;
+    endTime?: Date | null;
   }) => void;
 }
 

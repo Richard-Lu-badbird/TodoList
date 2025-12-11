@@ -64,7 +64,7 @@ export async function POST(req: NextRequest) {
 }
 
 export async function PUT(req: NextRequest) {
-  const { id, text, completed, startTime } = await req.json();
+  const { id, text, completed, startTime, endTime } = await req.json();
   console.log("id is: ", id)
   if (typeof id !== "number") {
     return NextResponse.json(
@@ -83,6 +83,7 @@ export async function PUT(req: NextRequest) {
   if (text !== undefined) target.text = text;
   if (completed !== undefined) target.completed = Boolean(completed);
   if (startTime !== undefined) target.startTime = startTime
+  if (endTime !== undefined) target.endTime = endTime
   todosCache = todos;
   persistTodos(todos);
 
