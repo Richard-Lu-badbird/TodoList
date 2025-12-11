@@ -760,3 +760,4 @@ See this log for the ancestor stack trace. button <button>
 [00:01:07.546] Browser LOG     payload is  {"completed":false,"endTime":"2025-12-30T16:00:00.000Z","id":1765333900382,"startTime":"2025-12-16T16:00:00.000Z","text":"???"}
 [00:01:23.706] Server  LOG     id is:  1765352709871
 [00:01:23.768] Browser LOG     payload is  {"completed":true,"endTime":null,"id":1765352709871,"startTime":"2025-12-10T07:45:09.871Z","text":"测试一下吗"}
+[00:12:40.960] Server  LOG      ✓ Compiled in 330ms

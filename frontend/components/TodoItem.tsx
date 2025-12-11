@@ -1,4 +1,15 @@
 import { Button } from "@/components/ui/button"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 import { Todo } from "@/types"
 
 interface TodoItemProps {
@@ -34,14 +45,32 @@ function TodoItem({ todo, toggleTodo, deleteTodo, onShowDetails }: TodoItemProps
         >
         详情
       </Button>
-      <Button 
-        onClick={() => deleteTodo(todo.id)}
-        variant="destructive" 
-        size="sm"
-        className="opacity-70 transition-all duration-200 hover:opacity-100 hover:scale-105 hover:shadow-md active:scale-95"
-      >
-        删除
-      </Button>
+      <AlertDialog>
+        <AlertDialogTrigger asChild>
+          <Button
+            variant="destructive"
+            size="sm"
+            className="opacity-70 transition-all duration-200 hover:opacity-100 hover:scale-105 hover:shadow-md active:scale-95"
+          >
+            删除
+          </Button>
+        </AlertDialogTrigger>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>确认删除？</AlertDialogTitle>
+            <AlertDialogDescription>
+              删除后无法恢复，是否继续删除该待办？
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>取消</AlertDialogCancel>
+            <AlertDialogAction onClick={() => deleteTodo(todo.id)}>
+              确认删除
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+      
       
     </li>
   )
